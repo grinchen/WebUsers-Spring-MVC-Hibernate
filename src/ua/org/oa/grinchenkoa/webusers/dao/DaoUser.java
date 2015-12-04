@@ -5,10 +5,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import ua.org.oa.grinchenkoa.webusers.entities.User;
-import ua.org.oa.grinchenkoa.webusers.managers.HibernateManager;
 
 
 /**
@@ -19,12 +22,14 @@ import ua.org.oa.grinchenkoa.webusers.managers.HibernateManager;
  * 
  * @author Andrei Grinchenko
  *
- * @param <T> User
  */
- 
+@Repository
+public class DaoUser extends Dao{
 
-public class DaoUser<T extends User> extends Dao<T>{
-
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	
 	/**
 	 * Getting sorted list of all User's objects
 	 * 
@@ -37,8 +42,8 @@ public class DaoUser<T extends User> extends Dao<T>{
 				List<User> list = new ArrayList<>();
 				Session session = null;
 				try {
-					session = HibernateManager.getSessionFactory().openSession();
-					list = session.createCriteria(User.class).list();
+					session = sessionFactory.openSession();
+					list = session.createCriteria(User.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 					Collections.sort(list);
 				} 
 				finally {
@@ -49,21 +54,22 @@ public class DaoUser<T extends User> extends Dao<T>{
 			}
 	
 	/**
-	 * Getting User's id with login
+	 * Getting User's id with login and password
 	 * 
 	 * @param login User's login
 	 * @return User's id
 	 * @throws SQLException
 	 * @throws IOException
 	 */
-	public Integer readId(String login) throws SQLException, IOException  {
+	public Integer readId(String login, String password) throws SQLException, IOException  {
 		User user = null;
 		Integer id = null;
 		Session session = null;
 		try {
-			session = HibernateManager.getSessionFactory().openSession();
+			session = sessionFactory.openSession();
 			user = (User)session.createCriteria(User.class).
-			add(Restrictions.like("login", login)).uniqueResult();
+			add(Restrictions.like("login", login)).
+			add(Restrictions.like("password", password)).uniqueResult();
 			if (user != null) id = user.getId();
 		} finally {
 			if ((session != null) && (session.isOpen()))
@@ -83,17 +89,16 @@ public class DaoUser<T extends User> extends Dao<T>{
 	public boolean contains(String login) throws SQLException, IOException  {
 		User user = null;
 		Session session = null;
-		boolean contains = false;
 		try {
-			session = HibernateManager.getSessionFactory().openSession();
+			session = sessionFactory.openSession();
 			user = (User)session.createCriteria(User.class).
 			add(Restrictions.like("login", login)).uniqueResult();
-			if (user != null) contains = true;
+			if (user != null) return true;
 		} 
 		finally {
 			if ((session != null) && (session.isOpen()))
 					session.close();
 		}
-		return contains;
+		return false;
 	}
 }

@@ -3,9 +3,11 @@ package ua.org.oa.grinchenkoa.webusers.dao;
 import java.io.IOException;
 import java.sql.SQLException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import ua.org.oa.grinchenkoa.webusers.entities.Role;
-import ua.org.oa.grinchenkoa.webusers.managers.HibernateManager;
 
 /**
  * Class DaoRole extends Dao and add special operations for Role Entity
@@ -14,9 +16,13 @@ import ua.org.oa.grinchenkoa.webusers.managers.HibernateManager;
  * 
  * @author Andrei Grinchenko
  *
- * @param <T> Role
  */
-public class DaoRole<T extends Role> extends Dao<T> {
+@Repository
+public class DaoRole extends Dao {
+	
+	@Autowired
+	private SessionFactory sessionFactory;
+	
 	
 	/**
 	 * Getting Entity Role with Role name
@@ -30,7 +36,7 @@ public class DaoRole<T extends Role> extends Dao<T> {
 		Role role = null;
 		Session session = null;
 		try {
-			session = HibernateManager.getSessionFactory().openSession();
+			session = sessionFactory.openSession();
 			role = (Role)session.createCriteria(Role.class).add(Restrictions.like("roleName", roleName)).uniqueResult();
 		} catch (Exception e) {
 		}
@@ -50,12 +56,13 @@ public class DaoRole<T extends Role> extends Dao<T> {
 	 * @throws SQLException
 	 * @throws IOException
 	 */
+	@Deprecated
 	public int readId(String roleName) throws SQLException, IOException {
 		Role role = null;
-		int id = 0;
+		Integer id = null;
 		Session session = null;
 		try {
-			session = HibernateManager.getSessionFactory().openSession();
+			session = sessionFactory.openSession();
 			role = (Role)session.createCriteria(Role.class).add(Restrictions.like("roleName", roleName)).uniqueResult();
 			id = role.getId();
 		} finally {

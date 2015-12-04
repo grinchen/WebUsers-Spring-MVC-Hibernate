@@ -14,8 +14,8 @@ import java.sql.SQLException;
 public interface Command {
 	/**
 	 * 
-	 * @param request HttpServletRequest object reference
-	 * @param response  HttpServletResponse object reference
+	 * @param request HttpServletRequest
+	 * @param response  HttpServletResponse
 	 * @return JSP page path for RequestDispatcher
 	 * @throws ServletException
 	 * @throws IOException

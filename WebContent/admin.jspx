@@ -65,8 +65,8 @@
 						<td>${user.adress.street}</td>
 						<td>${user.adress.building}</td>
 						<td>${user.adress.app}</td>
-						<td><c:forEach var="musicTypes" items="${user.userMusicTypes}">
-								${musicTypes.musicType.musicType}
+						<td><c:forEach var="musicType" items="${user.musicTypes}">
+								${musicType.musicType}
 							</c:forEach>
 						</td>
 						<td>${user.role.roleName}</td>

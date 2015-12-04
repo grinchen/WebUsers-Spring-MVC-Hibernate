@@ -1,0 +1,2000 @@
+12:28:23,228 DEBUG Logging Provider: org.jboss.logging.Log4jLoggerProvider
+12:28:23,239 DEBUG Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+12:28:23,242 DEBUG Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+12:28:23,243 DEBUG Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+12:28:23,327  INFO HHH000412: Hibernate Core {5.0.1.Final}
+12:28:23,329  INFO HHH000206: hibernate.properties not found
+12:28:23,334  INFO HHH000021: Bytecode provider name : javassist
+12:28:23,356 DEBUG Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+12:28:23,358  WARN HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12:28:23,359 DEBUG Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+12:28:23,363 DEBUG cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+12:28:23,605 DEBUG Building session factory using internal StandardServiceRegistryBuilder
+12:28:23,612 DEBUG Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+12:28:23,612 DEBUG Building session factory using provided StandardServiceRegistry
+12:28:23,632 DEBUG Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+12:28:23,640  INFO HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:28:23,673 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@1d09f68
+12:28:23,673 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@1d09f68
+12:28:23,673 DEBUG Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1d09f68
+12:28:23,674 DEBUG Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1ba329b
+12:28:23,675 DEBUG Adding type registration true_false -> org.hibernate.type.TrueFalseType@1484e43
+12:28:23,676 DEBUG Adding type registration yes_no -> org.hibernate.type.YesNoType@1db65ad
+12:28:23,678 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@9ed3e0
+12:28:23,678 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@9ed3e0
+12:28:23,678 DEBUG Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@9ed3e0
+12:28:23,679 DEBUG Adding type registration character -> org.hibernate.type.CharacterType@929c90
+12:28:23,679 DEBUG Adding type registration char -> org.hibernate.type.CharacterType@929c90
+12:28:23,679 DEBUG Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@929c90
+12:28:23,681 DEBUG Adding type registration short -> org.hibernate.type.ShortType@1bed645
+12:28:23,681 DEBUG Adding type registration short -> org.hibernate.type.ShortType@1bed645
+12:28:23,681 DEBUG Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1bed645
+12:28:23,683 DEBUG Adding type registration integer -> org.hibernate.type.IntegerType@98f6d0
+12:28:23,683 DEBUG Adding type registration int -> org.hibernate.type.IntegerType@98f6d0
+12:28:23,683 DEBUG Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@98f6d0
+12:28:23,685 DEBUG Adding type registration long -> org.hibernate.type.LongType@1577848
+12:28:23,685 DEBUG Adding type registration long -> org.hibernate.type.LongType@1577848
+12:28:23,685 DEBUG Adding type registration java.lang.Long -> org.hibernate.type.LongType@1577848
+12:28:23,687 DEBUG Adding type registration float -> org.hibernate.type.FloatType@1e20489
+12:28:23,687 DEBUG Adding type registration float -> org.hibernate.type.FloatType@1e20489
+12:28:23,688 DEBUG Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1e20489
+12:28:23,689 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@11a6cc4
+12:28:23,689 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@11a6cc4
+12:28:23,689 DEBUG Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@11a6cc4
+12:28:23,691 DEBUG Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@9b2158
+12:28:23,691 DEBUG Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@9b2158
+12:28:23,692 DEBUG Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1568b31
+12:28:23,692 DEBUG Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1568b31
+12:28:23,693 DEBUG Adding type registration string -> org.hibernate.type.StringType@1d8e2f4
+12:28:23,693 DEBUG Adding type registration java.lang.String -> org.hibernate.type.StringType@1d8e2f4
+12:28:23,694 DEBUG Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1f408c4
+12:28:23,695 DEBUG Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2dd6cb
+12:28:23,696 DEBUG Adding type registration url -> org.hibernate.type.UrlType@13dffb7
+12:28:23,696 DEBUG Adding type registration java.net.URL -> org.hibernate.type.UrlType@13dffb7
+12:28:23,698 DEBUG Adding type registration date -> org.hibernate.type.DateType@1044c0b
+12:28:23,698 DEBUG Adding type registration java.sql.Date -> org.hibernate.type.DateType@1044c0b
+12:28:23,703 DEBUG Adding type registration time -> org.hibernate.type.TimeType@7a3165
+12:28:23,703 DEBUG Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7a3165
+12:28:23,704 DEBUG Adding type registration timestamp -> org.hibernate.type.TimestampType@135bb6d
+12:28:23,705 DEBUG Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@135bb6d
+12:28:23,705 DEBUG Adding type registration java.util.Date -> org.hibernate.type.TimestampType@135bb6d
+12:28:23,707 DEBUG Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1890532
+12:28:23,710 DEBUG Adding type registration calendar -> org.hibernate.type.CalendarType@56a8b7
+12:28:23,710 DEBUG Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@56a8b7
+12:28:23,710 DEBUG Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@56a8b7
+12:28:23,711 DEBUG Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@146fcd6
+12:28:23,712 DEBUG Adding type registration locale -> org.hibernate.type.LocaleType@954dc
+12:28:23,712 DEBUG Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@954dc
+12:28:23,713 DEBUG Adding type registration currency -> org.hibernate.type.CurrencyType@1c6640c
+12:28:23,713 DEBUG Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1c6640c
+12:28:23,714 DEBUG Adding type registration timezone -> org.hibernate.type.TimeZoneType@144928c
+12:28:23,714 DEBUG Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@144928c
+12:28:23,715 DEBUG Adding type registration class -> org.hibernate.type.ClassType@19c3646
+12:28:23,715 DEBUG Adding type registration java.lang.Class -> org.hibernate.type.ClassType@19c3646
+12:28:23,718 DEBUG Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5e8777
+12:28:23,718 DEBUG Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5e8777
+12:28:23,719 DEBUG Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@c1ebfe
+12:28:23,721 DEBUG Adding type registration binary -> org.hibernate.type.BinaryType@1a10521
+12:28:23,721 DEBUG Adding type registration byte[] -> org.hibernate.type.BinaryType@1a10521
+12:28:23,721 DEBUG Adding type registration [B -> org.hibernate.type.BinaryType@1a10521
+12:28:23,722 DEBUG Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1172c5
+12:28:23,722 DEBUG Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1172c5
+12:28:23,723 DEBUG Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1172c5
+12:28:23,723 DEBUG Adding type registration image -> org.hibernate.type.ImageType@1a7b8a5
+12:28:23,724 DEBUG Adding type registration characters -> org.hibernate.type.CharArrayType@1a6463c
+12:28:23,725 DEBUG Adding type registration char[] -> org.hibernate.type.CharArrayType@1a6463c
+12:28:23,725 DEBUG Adding type registration [C -> org.hibernate.type.CharArrayType@1a6463c
+12:28:23,726 DEBUG Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1a3fb83
+12:28:23,726 DEBUG Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1a3fb83
+12:28:23,726 DEBUG Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1a3fb83
+12:28:23,727 DEBUG Adding type registration text -> org.hibernate.type.TextType@b3237b
+12:28:23,727 DEBUG Adding type registration ntext -> org.hibernate.type.NTextType@1733944
+12:28:23,732 DEBUG Adding type registration blob -> org.hibernate.type.BlobType@700208
+12:28:23,732 DEBUG Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@700208
+12:28:23,733 DEBUG Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@700ae1
+12:28:23,738 DEBUG Adding type registration clob -> org.hibernate.type.ClobType@1516062
+12:28:23,738 DEBUG Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1516062
+12:28:23,742 DEBUG Adding type registration nclob -> org.hibernate.type.NClobType@179313
+12:28:23,742 DEBUG Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@179313
+12:28:23,743 DEBUG Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1053d6d
+12:28:23,744 DEBUG Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@34b3f1
+12:28:23,745 DEBUG Adding type registration serializable -> org.hibernate.type.SerializableType@51e895
+12:28:23,749 DEBUG Adding type registration object -> org.hibernate.type.ObjectType@61c614
+12:28:23,749 DEBUG Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@61c614
+12:28:23,750 DEBUG Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1ac4773
+12:28:23,750 DEBUG Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@186faf6
+12:28:23,750 DEBUG Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@c63dac
+12:28:23,750 DEBUG Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@fafa10
+12:28:23,750 DEBUG Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1375aff
+12:28:23,751 DEBUG Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1374a22
+12:28:23,751 DEBUG Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@e405fb
+12:28:23,751 DEBUG Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@44deb7
+12:28:23,759  WARN HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:28:23,765  INFO HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/users]
+12:28:23,766  INFO HHH000046: Connection properties: {user=root, password=54321}
+12:28:23,767  INFO HHH000006: Autocommit mode: false
+12:28:23,769  INFO HHH000115: Hibernate connection pool size: 20 (min=1)
+12:28:23,769 DEBUG Initializing Connection pool with 1 Connections
+12:28:24,189 DEBUG Database ->
+       name : MySQL
+    version : 5.6.21-log
+      major : 5
+      minor : 6
+12:28:24,189 DEBUG Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.33 ( Revision: alexander.soklakov@oracle.com-20140908134200-8ukofe1izi0r2b63 )
+      major : 5
+      minor : 1
+12:28:24,189 DEBUG JDBC version : 4.0
+12:28:24,203  INFO HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:28:24,243 DEBUG JDBC driver metadata reported database stores quoted identifiers in more than one case
+12:28:24,248 DEBUG IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+12:28:24,290 DEBUG Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+12:28:24,290 DEBUG Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+12:28:24,298 DEBUG Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+12:28:24,298 DEBUG Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+12:28:24,300 DEBUG Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+12:28:24,301 DEBUG Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+12:28:24,302 DEBUG Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+12:28:24,303 DEBUG Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+12:28:24,304 DEBUG Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+12:28:24,305 DEBUG Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+12:28:24,306 DEBUG Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+12:28:24,307 DEBUG Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+12:28:24,307 DEBUG Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+12:28:24,308 DEBUG Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+12:28:24,354 DEBUG Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+12:28:24,397 DEBUG Binding entity from annotated class: ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:24,432 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:28:24,439 DEBUG Import with entity name Role
+12:28:24,442 DEBUG Bind entity ua.org.oa.grinchenkoa.webusers.entities.Role on table role
+12:28:24,476 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=true}
+12:28:24,480 DEBUG MetadataSourceProcessor property id with lazy=false
+12:28:24,481 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Role:id]
+12:28:24,483 DEBUG building SimpleValue for id
+12:28:24,485 DEBUG Building property id
+12:28:24,487 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=roleName, insertable=true, updatable=true, unique=false}
+12:28:24,489 DEBUG MetadataSourceProcessor property roleName with lazy=false
+12:28:24,490 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Role:roleName]
+12:28:24,490 DEBUG building SimpleValue for roleName
+12:28:24,490 DEBUG Building property roleName
+12:28:24,492 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='role'}
+12:28:24,494 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=users, insertable=true, updatable=true, unique=false}
+12:28:24,495 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=null, insertable=true, updatable=true, unique=false}
+12:28:24,505 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=element, insertable=true, updatable=true, unique=false}
+12:28:24,506 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=users_KEY, insertable=true, updatable=true, unique=false}
+12:28:24,506 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='users_KEY', referencedColumn='null', mappedBy='null'}
+12:28:24,507 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='role'}
+12:28:24,507 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='role'}
+12:28:24,508 DEBUG Collection role: ua.org.oa.grinchenkoa.webusers.entities.Role.users
+12:28:24,511 DEBUG Building property users
+12:28:24,512 DEBUG Binding entity from annotated class: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,512 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:28:24,512 DEBUG Import with entity name User
+12:28:24,512 DEBUG Bind entity ua.org.oa.grinchenkoa.webusers.entities.User on table user
+12:28:24,524 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:28:24,525 DEBUG MetadataSourceProcessor property id with lazy=false
+12:28:24,525 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.User:id]
+12:28:24,525 DEBUG building SimpleValue for id
+12:28:24,525 DEBUG Building property id
+12:28:24,526 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+12:28:24,526 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=adress, insertable=true, updatable=true, unique=false}
+12:28:24,529 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=birthDate, insertable=true, updatable=true, unique=false}
+12:28:24,530 DEBUG MetadataSourceProcessor property birthDate with lazy=false
+12:28:24,530 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.User:birthDate]
+12:28:24,530 DEBUG building SimpleValue for birthDate
+12:28:24,530 DEBUG Building property birthDate
+12:28:24,530 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+12:28:24,531 DEBUG MetadataSourceProcessor property email with lazy=false
+12:28:24,531 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.User:email]
+12:28:24,531 DEBUG building SimpleValue for email
+12:28:24,531 DEBUG Building property email
+12:28:24,531 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=login, insertable=true, updatable=true, unique=false}
+12:28:24,531 DEBUG MetadataSourceProcessor property login with lazy=false
+12:28:24,532 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.User:login]
+12:28:24,532 DEBUG building SimpleValue for login
+12:28:24,532 DEBUG Building property login
+12:28:24,532 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+12:28:24,532 DEBUG MetadataSourceProcessor property password with lazy=false
+12:28:24,534 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.User:password]
+12:28:24,535 DEBUG building SimpleValue for password
+12:28:24,535 DEBUG Building property password
+12:28:24,535 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='id_role', referencedColumn='id', mappedBy=''}
+12:28:24,535 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=role, insertable=true, updatable=true, unique=false}
+12:28:24,537 DEBUG Building property role
+12:28:24,537 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+12:28:24,537 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userMusicTypes, insertable=true, updatable=true, unique=false}
+12:28:24,537 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+12:28:24,538 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+12:28:24,538 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userMusicTypes_KEY, insertable=true, updatable=true, unique=false}
+12:28:24,538 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='userMusicTypes_KEY', referencedColumn='null', mappedBy='null'}
+12:28:24,538 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+12:28:24,538 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+12:28:24,538 DEBUG Collection role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:24,538 DEBUG Building property userMusicTypes
+12:28:24,538 DEBUG Binding entity from annotated class: ua.org.oa.grinchenkoa.webusers.entities.Adress
+12:28:24,539 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:28:24,539 DEBUG Import with entity name Adress
+12:28:24,539 DEBUG Bind entity ua.org.oa.grinchenkoa.webusers.entities.Adress on table adress
+12:28:24,541 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:28:24,541 DEBUG MetadataSourceProcessor property id with lazy=false
+12:28:24,541 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:id]
+12:28:24,541 DEBUG building SimpleValue for id
+12:28:24,541 DEBUG Building property id
+12:28:24,541 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=app, insertable=true, updatable=true, unique=false}
+12:28:24,541 DEBUG MetadataSourceProcessor property app with lazy=false
+12:28:24,541 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:app]
+12:28:24,542 DEBUG building SimpleValue for app
+12:28:24,542 DEBUG Building property app
+12:28:24,542 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=building, insertable=true, updatable=true, unique=false}
+12:28:24,542 DEBUG MetadataSourceProcessor property building with lazy=false
+12:28:24,542 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:building]
+12:28:24,542 DEBUG building SimpleValue for building
+12:28:24,542 DEBUG Building property building
+12:28:24,542 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=city, insertable=true, updatable=true, unique=false}
+12:28:24,542 DEBUG MetadataSourceProcessor property city with lazy=false
+12:28:24,543 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:city]
+12:28:24,543 DEBUG building SimpleValue for city
+12:28:24,543 DEBUG Building property city
+12:28:24,543 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=country, insertable=true, updatable=true, unique=false}
+12:28:24,543 DEBUG MetadataSourceProcessor property country with lazy=false
+12:28:24,543 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:country]
+12:28:24,543 DEBUG building SimpleValue for country
+12:28:24,544 DEBUG Building property country
+12:28:24,544 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=region, insertable=true, updatable=true, unique=false}
+12:28:24,544 DEBUG MetadataSourceProcessor property region with lazy=false
+12:28:24,544 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:region]
+12:28:24,544 DEBUG building SimpleValue for region
+12:28:24,544 DEBUG Building property region
+12:28:24,544 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=street, insertable=true, updatable=true, unique=false}
+12:28:24,544 DEBUG MetadataSourceProcessor property street with lazy=false
+12:28:24,544 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.Adress:street]
+12:28:24,545 DEBUG building SimpleValue for street
+12:28:24,545 DEBUG Building property street
+12:28:24,545 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='id_user', referencedColumn='id', mappedBy=''}
+12:28:24,547 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(adress), mappingColumn=user, insertable=true, updatable=true, unique=false}
+12:28:24,547 DEBUG Building property user
+12:28:24,547 DEBUG Binding entity from annotated class: ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:24,547 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:28:24,548 DEBUG Import with entity name MusicType
+12:28:24,548 DEBUG Bind entity ua.org.oa.grinchenkoa.webusers.entities.MusicType on table musictype
+12:28:24,549 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:28:24,550 DEBUG MetadataSourceProcessor property id with lazy=false
+12:28:24,550 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.MusicType:id]
+12:28:24,550 DEBUG building SimpleValue for id
+12:28:24,550 DEBUG Building property id
+12:28:24,550 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=typeName, insertable=true, updatable=true, unique=false}
+12:28:24,550 DEBUG MetadataSourceProcessor property musicType with lazy=false
+12:28:24,550 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.MusicType:musicType]
+12:28:24,551 DEBUG building SimpleValue for musicType
+12:28:24,551 DEBUG Building property musicType
+12:28:24,551 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='musicType'}
+12:28:24,551 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=userMusicTypes, insertable=true, updatable=true, unique=false}
+12:28:24,551 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=null, insertable=true, updatable=true, unique=false}
+12:28:24,551 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=element, insertable=true, updatable=true, unique=false}
+12:28:24,551 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(musictype), mappingColumn=userMusicTypes_KEY, insertable=true, updatable=true, unique=false}
+12:28:24,552 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='userMusicTypes_KEY', referencedColumn='null', mappedBy='null'}
+12:28:24,552 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='musicType'}
+12:28:24,552 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='musicType'}
+12:28:24,552 DEBUG Collection role: ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes
+12:28:24,552 DEBUG Building property userMusicTypes
+12:28:24,552 DEBUG Binding entity from annotated class: ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:24,552 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:28:24,552 DEBUG Import with entity name UserMusicType
+12:28:24,552 DEBUG Bind entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType on table usermusictype
+12:28:24,553 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usermusictype), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:28:24,554 DEBUG MetadataSourceProcessor property id with lazy=false
+12:28:24,554 DEBUG Attempting to locate auto-apply AttributeConverter for property [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType:id]
+12:28:24,554 DEBUG building SimpleValue for id
+12:28:24,554 DEBUG Building property id
+12:28:24,554 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='id_musicType', referencedColumn='id', mappedBy=''}
+12:28:24,554 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usermusictype), mappingColumn=musicType, insertable=true, updatable=true, unique=false}
+12:28:24,554 DEBUG Building property musicType
+12:28:24,555 DEBUG Binding column: Ejb3JoinColumn{logicalColumnName='id_user', referencedColumn='id', mappedBy=''}
+12:28:24,555 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usermusictype), mappingColumn=user, insertable=true, updatable=true, unique=false}
+12:28:24,555 DEBUG Building property user
+12:28:24,556 DEBUG Starting fillSimpleValue for id
+12:28:24,556 DEBUG Starting fillSimpleValue for roleName
+12:28:24,556 DEBUG Starting fillSimpleValue for id
+12:28:24,557 DEBUG Starting fillSimpleValue for birthDate
+12:28:24,557 DEBUG Starting fillSimpleValue for email
+12:28:24,557 DEBUG Starting fillSimpleValue for login
+12:28:24,557 DEBUG Starting fillSimpleValue for password
+12:28:24,557 DEBUG Starting fillSimpleValue for id
+12:28:24,557 DEBUG Starting fillSimpleValue for app
+12:28:24,557 DEBUG Starting fillSimpleValue for building
+12:28:24,557 DEBUG Starting fillSimpleValue for city
+12:28:24,557 DEBUG Starting fillSimpleValue for country
+12:28:24,557 DEBUG Starting fillSimpleValue for region
+12:28:24,558 DEBUG Starting fillSimpleValue for street
+12:28:24,558 DEBUG Starting fillSimpleValue for id
+12:28:24,558 DEBUG Starting fillSimpleValue for musicType
+12:28:24,558 DEBUG Starting fillSimpleValue for id
+12:28:24,564 DEBUG Second pass for collection: ua.org.oa.grinchenkoa.webusers.entities.Role.users
+12:28:24,566 DEBUG Binding a OneToMany: ua.org.oa.grinchenkoa.webusers.entities.Role.users through a foreign key
+12:28:24,567 DEBUG Mapping collection: ua.org.oa.grinchenkoa.webusers.entities.Role.users -> user
+12:28:24,570 DEBUG Retrieving property ua.org.oa.grinchenkoa.webusers.entities.User.role
+12:28:24,570 DEBUG Mapped collection key: id_role, one-to-many: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,572 DEBUG Building property adress
+12:28:24,572 DEBUG Second pass for collection: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:24,573 DEBUG Binding a OneToMany: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes through a foreign key
+12:28:24,573 DEBUG Mapping collection: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes -> usermusictype
+12:28:24,573 DEBUG Retrieving property ua.org.oa.grinchenkoa.webusers.entities.UserMusicType.user
+12:28:24,573 DEBUG Mapped collection key: id_user, one-to-many: ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:24,573 DEBUG Second pass for collection: ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes
+12:28:24,573 DEBUG Binding a OneToMany: ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes through a foreign key
+12:28:24,573 DEBUG Mapping collection: ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes -> usermusictype
+12:28:24,573 DEBUG Retrieving property ua.org.oa.grinchenkoa.webusers.entities.UserMusicType.musicType
+12:28:24,573 DEBUG Mapped collection key: id_musicType, one-to-many: ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:24,573 DEBUG Processing association property references
+12:28:24,574 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,577 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:24,580 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:24,581 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,582 DEBUG Processing association property references
+12:28:24,583 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,583 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:24,583 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:24,583 DEBUG Resolving reference to class: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,623 DEBUG Building session factory
+12:28:24,624 DEBUG SessionFactory name : null
+12:28:24,624 DEBUG Automatic flush during beforeCompletion(): disabled
+12:28:24,624 DEBUG Automatic session close at end of transaction: disabled
+12:28:24,624 DEBUG Statistics: disabled
+12:28:24,624 DEBUG Deleted entity synthetic identifier rollback: disabled
+12:28:24,624 DEBUG Default entity-mode: pojo
+12:28:24,624 DEBUG Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:28:24,624 DEBUG Allow initialization of lazy state outside session : enabled
+12:28:24,625 DEBUG Using BatchFetchStyle : LEGACY
+12:28:24,625 DEBUG Default batch fetch size: -1
+12:28:24,625 DEBUG Maximum outer join fetch depth: 2
+12:28:24,625 DEBUG Default null ordering: NONE
+12:28:24,625 DEBUG Order SQL updates by primary key: disabled
+12:28:24,625 DEBUG Order SQL inserts for batching: disabled
+12:28:24,625 DEBUG multi-tenancy strategy : NONE
+12:28:24,625 DEBUG JTA Track by Thread: enabled
+12:28:24,625 DEBUG Query language substitutions: {}
+12:28:24,625 DEBUG JPA query language strict compliance: disabled
+12:28:24,625 DEBUG Named query checking : enabled
+12:28:24,625 DEBUG Second-level cache: disabled
+12:28:24,625 DEBUG Second-level query cache: disabled
+12:28:24,625 DEBUG Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@4b3598
+12:28:24,626 DEBUG Second-level cache region prefix: null
+12:28:24,626 DEBUG Optimize second-level cache for minimal puts: disabled
+12:28:24,626 DEBUG Structured second-level cache entries: disabled
+12:28:24,626 DEBUG Second-level cache direct-reference entries: disabled
+12:28:24,626 DEBUG Automatic eviction of collection cache: disabled
+12:28:24,626 DEBUG JDBC batch size: 15
+12:28:24,626 DEBUG JDBC batch updates for versioned data: enabled
+12:28:24,626 DEBUG Scrollable result sets: enabled
+12:28:24,626 DEBUG Wrap result sets: disabled
+12:28:24,626 DEBUG JDBC3 getGeneratedKeys(): enabled
+12:28:24,626 DEBUG JDBC result set fetch size: null
+12:28:24,626 DEBUG Connection release mode: ON_CLOSE
+12:28:24,626 DEBUG Generate SQL with comments: disabled
+12:28:24,684 DEBUG Session factory constructed with filter configurations : {}
+12:28:24,685 DEBUG Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, catalina.base=D:\my\Studing\Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1, hibernate.connection.url=jdbc:mysql://localhost:3306/users, sun.management.compiler=HotSpot Client Compiler, catalina.useNaming=true, os.name=Windows 7, sun.boot.class.path=C:\Program Files\Java\jdk1.7.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_51\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_51-b13, user.name=user, shared.loader=, tomcat.util.buf.StringCache.byte.enabled=true, user.language=ru, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, sun.boot.library.path=C:\Program Files\Java\jdk1.7.0_51\jre\bin, java.version=1.7.0_51, user.timezone=Europe/Helsinki, sun.arch.data.model=32, java.endorsed.dirs=D:\my\Studing\Workspace\apache-tomcat-7.0.56\endorsed, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.resources.,org.apache.tomcat., file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=51.0, user.country=RU, java.home=C:\Program Files\Java\jdk1.7.0_51\jre, java.vm.info=mixed mode, sharing, os.version=6.1, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1b9d077, path.separator=;, java.vm.version=24.51-b03, hibernate.connection.password=54321, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.scan.DefaultJarScanner.jarsToSkip=bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-spdy.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j.jar,log4j-1*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,hamcrest*.jar,org.hamcrest*.jar,ant-launcher.jar,cobertura-*.jar,asm-*.jar,dom4j-*.jar,icu4j-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,oro-*.jar,servlet-api-*.jar,tagsoup-*.jar,xmlParserAPIs-*.jar,xom-*.jar, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=root, user.script=, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., java.naming.factory.url.pkgs=org.apache.naming, user.home=C:\Users\user, hibernate.enable_lazy_load_no_trans=true, org.apache.catalina.startup.ContextConfig.jarsToSkip=, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.7.0_51\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Program Files\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\program files\java\jdk1.7.0_51\bin\;C:\Program Files\SlikSvn\bin;C:\Program Files\MySQL\MySQL Utilities 1.4\;C:\Program Files\MySQL\MySQL Utilities 1.4\Doctrine extensions for PHP\;C:\Program Files\Skype\Phone\;C:\Program Files\eclipse;;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=com.mysql.jdbc.Driver, org.apache.catalina.startup.TldConfig.jarsToSkip=tomcat7-websocket.jar, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.MySQLDialect, common.loader=D:\my\Studing\Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1/lib,D:\my\Studing\Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1/lib/*.jar,D:\my\Studing\Workspace\apache-tomcat-7.0.56/lib,D:\my\Studing\Workspace\apache-tomcat-7.0.56/lib/*.jar, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.apache.catalina.startup.Bootstrap start, java.class.path=D:\my\Studing\Workspace\apache-tomcat-7.0.56\bin\bootstrap.jar;D:\my\Studing\Workspace\apache-tomcat-7.0.56\bin\tomcat-juli.jar;C:\Program Files\Java\jdk1.7.0_51\lib\tools.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\antlr-2.7.7.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\dom4j-1.6.1.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\geronimo-jta_1.1_spec-1.1.1.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\hibernate-commons-annotations-5.0.0.Final.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\hibernate-core-5.0.1.Final.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\hibernate-jpa-2.1-api-1.0.0.Final.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\jandex-1.2.2.Final.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\javassist-3.18.1-GA.jar;D:\my\Studing\Git\WebUsers1.2\libs\hibernate\required\jboss-logging-3.3.0.Final.jar;D:\my\Studing\Git\WebUsers1.2\libs\log4j-1.2.17.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, catalina.home=D:\my\Studing\Workspace\apache-tomcat-7.0.56, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, java.io.tmpdir=C:\Users\user\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, server.loader=, os.arch=x86, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.7.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=D:\my\Studing\Git\WebUsers1.2\build\classes, line.separator=
+, wtp.deploy=D:\my\Studing\Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps, java.vm.name=Java HotSpot(TM) Client VM, hibernate.cache.use_second_level_cache=false, file.encoding=Cp1251, java.specification.version=1.7}
+12:28:24,709 DEBUG Skipping JACC integration as it was not enabled
+12:28:24,745 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.User] is safe
+12:28:24,745 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,762 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.User] is safe
+12:28:24,762 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:24,971 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.MusicType] is safe
+12:28:24,971 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:24,973 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.MusicType] is safe
+12:28:24,973 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:24,976 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.Role] is safe
+12:28:24,982 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:24,983 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.Role] is safe
+12:28:24,983 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:24,986 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.Adress] is safe
+12:28:24,986 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.Adress
+12:28:24,987 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.Adress] is safe
+12:28:24,987 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.Adress
+12:28:24,993 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType] is safe
+12:28:24,993 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:24,994 DEBUG Not known whether passed class name [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType] is safe
+12:28:24,994 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:25,009 DEBUG Static SQL for collection: ua.org.oa.grinchenkoa.webusers.entities.Role.users
+12:28:25,009 DEBUG  Row insert: update user set id_role=? where id=?
+12:28:25,009 DEBUG  Row update: update user set  where id=?
+12:28:25,009 DEBUG  Row delete: update user set id_role=null where id_role=? and id=?
+12:28:25,010 DEBUG  One-shot delete: update user set id_role=null where id_role=?
+12:28:25,010 DEBUG Static SQL for collection: ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes
+12:28:25,010 DEBUG  Row insert: update usermusictype set id_musicType=? where id=?
+12:28:25,010 DEBUG  Row update: update usermusictype set  where id=?
+12:28:25,010 DEBUG  Row delete: update usermusictype set id_musicType=null where id_musicType=? and id=?
+12:28:25,010 DEBUG  One-shot delete: update usermusictype set id_musicType=null where id_musicType=?
+12:28:25,012 DEBUG Static SQL for collection: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,012 DEBUG  Row insert: update usermusictype set id_user=? where id=?
+12:28:25,012 DEBUG  Row update: update usermusictype set  where id=?
+12:28:25,012 DEBUG  Row delete: update usermusictype set id_user=null where id_user=? and id=?
+12:28:25,012 DEBUG  One-shot delete: update usermusictype set id_user=null where id_user=?
+12:28:25,017 DEBUG Static SQL for entity: ua.org.oa.grinchenkoa.webusers.entities.User
+12:28:25,017 DEBUG  Version select: select id from user where id =?
+12:28:25,017 DEBUG  Snapshot select: select user_.id, user_.birthDate as birthDat2_3_, user_.email as email3_3_, user_.login as login4_3_, user_.password as password5_3_, user_.id_role as id_role6_3_ from user user_ where user_.id=?
+12:28:25,017 DEBUG  Insert 0: insert into user (birthDate, email, login, password, id_role, id) values (?, ?, ?, ?, ?, ?)
+12:28:25,017 DEBUG  Update 0: update user set birthDate=?, email=?, login=?, password=?, id_role=? where id=?
+12:28:25,017 DEBUG  Delete 0: delete from user where id=?
+12:28:25,017 DEBUG  Identity insert: insert into user (birthDate, email, login, password, id_role) values (?, ?, ?, ?, ?)
+12:28:25,055 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@969ee5]
+12:28:25,056 DEBUG Visiting attribute path : birthDate
+12:28:25,057 DEBUG Visiting attribute path : email
+12:28:25,057 DEBUG Visiting attribute path : login
+12:28:25,057 DEBUG Visiting attribute path : password
+12:28:25,057 DEBUG Visiting attribute path : role
+12:28:25,059 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,059 DEBUG Visiting attribute path : adress
+12:28:25,061 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9e50cd]
+12:28:25,063 DEBUG Visiting attribute path : adress.app
+12:28:25,063 DEBUG Visiting attribute path : adress.building
+12:28:25,063 DEBUG Visiting attribute path : adress.city
+12:28:25,063 DEBUG Visiting attribute path : adress.country
+12:28:25,063 DEBUG Visiting attribute path : adress.region
+12:28:25,063 DEBUG Visiting attribute path : adress.street
+12:28:25,063 DEBUG Visiting attribute path : adress.user
+12:28:25,063 DEBUG Property path deemed to be circular : adress.user
+12:28:25,064 DEBUG Building LoadPlan...
+12:28:25,090 DEBUG processing queryspace <gen:0>
+12:28:25,097 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(adress)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+                - SQL table alias mapping - adress1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+12:28:25,101 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [NONE]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_, adress1_.id as id1_0_1_, adress1_.app as app2_0_1_, adress1_.building as building3_0_1_, adress1_.city as city4_0_1_, adress1_.country as country5_0_1_, adress1_.region as region6_0_1_, adress1_.street as street7_0_1_, adress1_.id_user as id_user8_0_1_ from user user0_ left outer join adress adress1_ on user0_.id=adress1_.id_user where user0_.id=?
+12:28:25,101 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b2fee5]
+12:28:25,101 DEBUG Visiting attribute path : birthDate
+12:28:25,101 DEBUG Visiting attribute path : email
+12:28:25,101 DEBUG Visiting attribute path : login
+12:28:25,101 DEBUG Visiting attribute path : password
+12:28:25,101 DEBUG Visiting attribute path : role
+12:28:25,101 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,101 DEBUG Visiting attribute path : adress
+12:28:25,102 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1098870]
+12:28:25,102 DEBUG Visiting attribute path : adress.app
+12:28:25,102 DEBUG Visiting attribute path : adress.building
+12:28:25,102 DEBUG Visiting attribute path : adress.city
+12:28:25,102 DEBUG Visiting attribute path : adress.country
+12:28:25,102 DEBUG Visiting attribute path : adress.region
+12:28:25,102 DEBUG Visiting attribute path : adress.street
+12:28:25,102 DEBUG Visiting attribute path : adress.user
+12:28:25,102 DEBUG Property path deemed to be circular : adress.user
+12:28:25,103 DEBUG Building LoadPlan...
+12:28:25,103 DEBUG processing queryspace <gen:0>
+12:28:25,104 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(adress)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+                - SQL table alias mapping - adress1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+12:28:25,105 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [READ]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_, adress1_.id as id1_0_1_, adress1_.app as app2_0_1_, adress1_.building as building3_0_1_, adress1_.city as city4_0_1_, adress1_.country as country5_0_1_, adress1_.region as region6_0_1_, adress1_.street as street7_0_1_, adress1_.id_user as id_user8_0_1_ from user user0_ left outer join adress adress1_ on user0_.id=adress1_.id_user where user0_.id=?
+12:28:25,105 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bfb945]
+12:28:25,105 DEBUG Visiting attribute path : birthDate
+12:28:25,105 DEBUG Visiting attribute path : email
+12:28:25,105 DEBUG Visiting attribute path : login
+12:28:25,105 DEBUG Visiting attribute path : password
+12:28:25,105 DEBUG Visiting attribute path : role
+12:28:25,105 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,106 DEBUG Visiting attribute path : adress
+12:28:25,106 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d18c85]
+12:28:25,106 DEBUG Building LoadPlan...
+12:28:25,106 DEBUG processing queryspace <gen:0>
+12:28:25,107 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,107 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [UPGRADE]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,107 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@608c64]
+12:28:25,107 DEBUG Visiting attribute path : birthDate
+12:28:25,107 DEBUG Visiting attribute path : email
+12:28:25,107 DEBUG Visiting attribute path : login
+12:28:25,107 DEBUG Visiting attribute path : password
+12:28:25,107 DEBUG Visiting attribute path : role
+12:28:25,108 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,108 DEBUG Visiting attribute path : adress
+12:28:25,108 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@49bb18]
+12:28:25,108 DEBUG Building LoadPlan...
+12:28:25,108 DEBUG processing queryspace <gen:0>
+12:28:25,109 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,109 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [UPGRADE_NOWAIT]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,109 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9a311d]
+12:28:25,109 DEBUG Visiting attribute path : birthDate
+12:28:25,109 DEBUG Visiting attribute path : email
+12:28:25,109 DEBUG Visiting attribute path : login
+12:28:25,109 DEBUG Visiting attribute path : password
+12:28:25,109 DEBUG Visiting attribute path : role
+12:28:25,109 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,110 DEBUG Visiting attribute path : adress
+12:28:25,110 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b5dddf]
+12:28:25,110 DEBUG Building LoadPlan...
+12:28:25,110 DEBUG processing queryspace <gen:0>
+12:28:25,110 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,110 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,110 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f99548]
+12:28:25,111 DEBUG Visiting attribute path : birthDate
+12:28:25,111 DEBUG Visiting attribute path : email
+12:28:25,111 DEBUG Visiting attribute path : login
+12:28:25,111 DEBUG Visiting attribute path : password
+12:28:25,111 DEBUG Visiting attribute path : role
+12:28:25,111 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,111 DEBUG Visiting attribute path : adress
+12:28:25,111 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ce08a5]
+12:28:25,111 DEBUG Building LoadPlan...
+12:28:25,111 DEBUG processing queryspace <gen:0>
+12:28:25,112 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,112 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [FORCE]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,112 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@99af01]
+12:28:25,112 DEBUG Visiting attribute path : birthDate
+12:28:25,112 DEBUG Visiting attribute path : email
+12:28:25,112 DEBUG Visiting attribute path : login
+12:28:25,112 DEBUG Visiting attribute path : password
+12:28:25,112 DEBUG Visiting attribute path : role
+12:28:25,112 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,112 DEBUG Visiting attribute path : adress
+12:28:25,112 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ed0ded]
+12:28:25,112 DEBUG Building LoadPlan...
+12:28:25,113 DEBUG processing queryspace <gen:0>
+12:28:25,113 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,113 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [PESSIMISTIC_READ]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? lock in share mode
+12:28:25,113 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12d5171]
+12:28:25,113 DEBUG Visiting attribute path : birthDate
+12:28:25,113 DEBUG Visiting attribute path : email
+12:28:25,113 DEBUG Visiting attribute path : login
+12:28:25,113 DEBUG Visiting attribute path : password
+12:28:25,113 DEBUG Visiting attribute path : role
+12:28:25,113 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,113 DEBUG Visiting attribute path : adress
+12:28:25,114 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@925650]
+12:28:25,114 DEBUG Building LoadPlan...
+12:28:25,114 DEBUG processing queryspace <gen:0>
+12:28:25,114 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,114 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [PESSIMISTIC_WRITE]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,114 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@160b926]
+12:28:25,114 DEBUG Visiting attribute path : birthDate
+12:28:25,114 DEBUG Visiting attribute path : email
+12:28:25,114 DEBUG Visiting attribute path : login
+12:28:25,115 DEBUG Visiting attribute path : password
+12:28:25,115 DEBUG Visiting attribute path : role
+12:28:25,115 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,115 DEBUG Visiting attribute path : adress
+12:28:25,115 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f21ac1]
+12:28:25,115 DEBUG Building LoadPlan...
+12:28:25,115 DEBUG processing queryspace <gen:0>
+12:28:25,115 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,116 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=? for update
+12:28:25,116 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ba9429]
+12:28:25,116 DEBUG Visiting attribute path : birthDate
+12:28:25,116 DEBUG Visiting attribute path : email
+12:28:25,116 DEBUG Visiting attribute path : login
+12:28:25,116 DEBUG Visiting attribute path : password
+12:28:25,116 DEBUG Visiting attribute path : role
+12:28:25,116 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,116 DEBUG Visiting attribute path : adress
+12:28:25,116 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1366219]
+12:28:25,116 DEBUG Building LoadPlan...
+12:28:25,116 DEBUG processing queryspace <gen:0>
+12:28:25,118 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,118 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [OPTIMISTIC]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=?
+12:28:25,118 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16257ee]
+12:28:25,118 DEBUG Visiting attribute path : birthDate
+12:28:25,118 DEBUG Visiting attribute path : email
+12:28:25,118 DEBUG Visiting attribute path : login
+12:28:25,120 DEBUG Visiting attribute path : password
+12:28:25,120 DEBUG Visiting attribute path : role
+12:28:25,120 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,120 DEBUG Visiting attribute path : adress
+12:28:25,121 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1cb7a27]
+12:28:25,121 DEBUG Building LoadPlan...
+12:28:25,121 DEBUG processing queryspace <gen:0>
+12:28:25,121 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.User.adress)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+12:28:25,122 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=?
+12:28:25,142 DEBUG Static select for action ACTION_MERGE on entity ua.org.oa.grinchenkoa.webusers.entities.User: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=?
+12:28:25,142 DEBUG Static select for action ACTION_REFRESH on entity ua.org.oa.grinchenkoa.webusers.entities.User: select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_ from user user0_ where user0_.id=?
+12:28:25,143 DEBUG Static SQL for entity: ua.org.oa.grinchenkoa.webusers.entities.Role
+12:28:25,143 DEBUG  Version select: select id from role where id =?
+12:28:25,143 DEBUG  Snapshot select: select role_.id, role_.roleName as roleName2_2_ from role role_ where role_.id=?
+12:28:25,143 DEBUG  Insert 0: insert into role (roleName, id) values (?, ?)
+12:28:25,143 DEBUG  Update 0: update role set roleName=? where id=?
+12:28:25,143 DEBUG  Delete 0: delete from role where id=?
+12:28:25,143 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@13e79e7]
+12:28:25,143 DEBUG Visiting attribute path : roleName
+12:28:25,143 DEBUG Visiting attribute path : users
+12:28:25,143 DEBUG Building LoadPlan...
+12:28:25,144 DEBUG processing queryspace <gen:0>
+12:28:25,144 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,144 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [NONE]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,144 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19701da]
+12:28:25,144 DEBUG Visiting attribute path : roleName
+12:28:25,144 DEBUG Visiting attribute path : users
+12:28:25,144 DEBUG Building LoadPlan...
+12:28:25,145 DEBUG processing queryspace <gen:0>
+12:28:25,145 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,145 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [READ]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,145 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ce82e9]
+12:28:25,145 DEBUG Visiting attribute path : roleName
+12:28:25,145 DEBUG Visiting attribute path : users
+12:28:25,145 DEBUG Building LoadPlan...
+12:28:25,145 DEBUG processing queryspace <gen:0>
+12:28:25,146 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,146 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [UPGRADE]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,146 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c2edb1]
+12:28:25,146 DEBUG Visiting attribute path : roleName
+12:28:25,146 DEBUG Visiting attribute path : users
+12:28:25,147 DEBUG Building LoadPlan...
+12:28:25,148 DEBUG processing queryspace <gen:0>
+12:28:25,148 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,148 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [UPGRADE_NOWAIT]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,148 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@148a19f]
+12:28:25,148 DEBUG Visiting attribute path : roleName
+12:28:25,148 DEBUG Visiting attribute path : users
+12:28:25,149 DEBUG Building LoadPlan...
+12:28:25,149 DEBUG processing queryspace <gen:0>
+12:28:25,150 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,150 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [UPGRADE_SKIPLOCKED]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,150 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c127db]
+12:28:25,150 DEBUG Visiting attribute path : roleName
+12:28:25,150 DEBUG Visiting attribute path : users
+12:28:25,150 DEBUG Building LoadPlan...
+12:28:25,150 DEBUG processing queryspace <gen:0>
+12:28:25,151 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,151 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [FORCE]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,151 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5295f0]
+12:28:25,151 DEBUG Visiting attribute path : roleName
+12:28:25,151 DEBUG Visiting attribute path : users
+12:28:25,151 DEBUG Building LoadPlan...
+12:28:25,152 DEBUG processing queryspace <gen:0>
+12:28:25,152 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,152 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [PESSIMISTIC_READ]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? lock in share mode
+12:28:25,152 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1140cb]
+12:28:25,152 DEBUG Visiting attribute path : roleName
+12:28:25,152 DEBUG Visiting attribute path : users
+12:28:25,156 DEBUG Building LoadPlan...
+12:28:25,156 DEBUG processing queryspace <gen:0>
+12:28:25,156 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,157 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [PESSIMISTIC_WRITE]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,157 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4154c9]
+12:28:25,157 DEBUG Visiting attribute path : roleName
+12:28:25,157 DEBUG Visiting attribute path : users
+12:28:25,157 DEBUG Building LoadPlan...
+12:28:25,157 DEBUG processing queryspace <gen:0>
+12:28:25,157 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,157 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [PESSIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=? for update
+12:28:25,158 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71894]
+12:28:25,158 DEBUG Visiting attribute path : roleName
+12:28:25,158 DEBUG Visiting attribute path : users
+12:28:25,158 DEBUG Building LoadPlan...
+12:28:25,158 DEBUG processing queryspace <gen:0>
+12:28:25,158 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,158 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [OPTIMISTIC]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,159 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@205ed3]
+12:28:25,159 DEBUG Visiting attribute path : roleName
+12:28:25,159 DEBUG Visiting attribute path : users
+12:28:25,159 DEBUG Building LoadPlan...
+12:28:25,159 DEBUG processing queryspace <gen:0>
+12:28:25,159 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Role, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+12:28:25,160 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Role [OPTIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,160 DEBUG Static select for action ACTION_MERGE on entity ua.org.oa.grinchenkoa.webusers.entities.Role: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,160 DEBUG Static select for action ACTION_REFRESH on entity ua.org.oa.grinchenkoa.webusers.entities.Role: select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,160 DEBUG Static SQL for entity: ua.org.oa.grinchenkoa.webusers.entities.MusicType
+12:28:25,160 DEBUG  Version select: select id from musictype where id =?
+12:28:25,160 DEBUG  Snapshot select: select musictype_.id, musictype_.typeName as typeName2_1_ from musictype musictype_ where musictype_.id=?
+12:28:25,160 DEBUG  Insert 0: insert into musictype (typeName, id) values (?, ?)
+12:28:25,160 DEBUG  Update 0: update musictype set typeName=? where id=?
+12:28:25,161 DEBUG  Delete 0: delete from musictype where id=?
+12:28:25,161 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@167eb59]
+12:28:25,161 DEBUG Visiting attribute path : musicType
+12:28:25,161 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,161 DEBUG Building LoadPlan...
+12:28:25,161 DEBUG processing queryspace <gen:0>
+12:28:25,161 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,162 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [NONE]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,162 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1861b5a]
+12:28:25,162 DEBUG Visiting attribute path : musicType
+12:28:25,162 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,162 DEBUG Building LoadPlan...
+12:28:25,162 DEBUG processing queryspace <gen:0>
+12:28:25,162 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,162 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [READ]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,163 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16758e5]
+12:28:25,163 DEBUG Visiting attribute path : musicType
+12:28:25,163 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,163 DEBUG Building LoadPlan...
+12:28:25,163 DEBUG processing queryspace <gen:0>
+12:28:25,163 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,163 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [UPGRADE]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,164 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14ec88b]
+12:28:25,164 DEBUG Visiting attribute path : musicType
+12:28:25,164 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,164 DEBUG Building LoadPlan...
+12:28:25,164 DEBUG processing queryspace <gen:0>
+12:28:25,164 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,164 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [UPGRADE_NOWAIT]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,164 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5b5ec]
+12:28:25,165 DEBUG Visiting attribute path : musicType
+12:28:25,165 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,165 DEBUG Building LoadPlan...
+12:28:25,165 DEBUG processing queryspace <gen:0>
+12:28:25,165 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,165 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [UPGRADE_SKIPLOCKED]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,165 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@df47f7]
+12:28:25,166 DEBUG Visiting attribute path : musicType
+12:28:25,166 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,166 DEBUG Building LoadPlan...
+12:28:25,166 DEBUG processing queryspace <gen:0>
+12:28:25,166 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,166 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [FORCE]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,166 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19ec610]
+12:28:25,167 DEBUG Visiting attribute path : musicType
+12:28:25,167 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,167 DEBUG Building LoadPlan...
+12:28:25,167 DEBUG processing queryspace <gen:0>
+12:28:25,167 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,167 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [PESSIMISTIC_READ]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? lock in share mode
+12:28:25,167 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e07354]
+12:28:25,167 DEBUG Visiting attribute path : musicType
+12:28:25,167 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,168 DEBUG Building LoadPlan...
+12:28:25,168 DEBUG processing queryspace <gen:0>
+12:28:25,168 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,168 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [PESSIMISTIC_WRITE]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,174 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@93a981]
+12:28:25,174 DEBUG Visiting attribute path : musicType
+12:28:25,174 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,174 DEBUG Building LoadPlan...
+12:28:25,175 DEBUG processing queryspace <gen:0>
+12:28:25,175 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,175 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [PESSIMISTIC_FORCE_INCREMENT]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=? for update
+12:28:25,175 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52d244]
+12:28:25,175 DEBUG Visiting attribute path : musicType
+12:28:25,176 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,176 DEBUG Building LoadPlan...
+12:28:25,176 DEBUG processing queryspace <gen:0>
+12:28:25,177 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,177 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [OPTIMISTIC]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,177 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@125470]
+12:28:25,177 DEBUG Visiting attribute path : musicType
+12:28:25,177 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,177 DEBUG Building LoadPlan...
+12:28:25,178 DEBUG processing queryspace <gen:0>
+12:28:25,178 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.MusicType)
+          - SQL table alias mapping - musictype0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+12:28:25,178 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.MusicType [OPTIMISTIC_FORCE_INCREMENT]: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,179 DEBUG Static select for action ACTION_MERGE on entity ua.org.oa.grinchenkoa.webusers.entities.MusicType: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,179 DEBUG Static select for action ACTION_REFRESH on entity ua.org.oa.grinchenkoa.webusers.entities.MusicType: select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,179 DEBUG Static SQL for entity: ua.org.oa.grinchenkoa.webusers.entities.Adress
+12:28:25,179 DEBUG  Version select: select id from adress where id =?
+12:28:25,179 DEBUG  Snapshot select: select adress_.id, adress_.app as app2_0_, adress_.building as building3_0_, adress_.city as city4_0_, adress_.country as country5_0_, adress_.region as region6_0_, adress_.street as street7_0_, adress_.id_user as id_user8_0_ from adress adress_ where adress_.id=?
+12:28:25,179 DEBUG  Insert 0: insert into adress (app, building, city, country, region, street, id_user, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+12:28:25,180 DEBUG  Update 0: update adress set app=?, building=?, city=?, country=?, region=?, street=?, id_user=? where id=?
+12:28:25,180 DEBUG  Delete 0: delete from adress where id=?
+12:28:25,180 DEBUG  Identity insert: insert into adress (app, building, city, country, region, street, id_user) values (?, ?, ?, ?, ?, ?, ?)
+12:28:25,180 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12ca4b7]
+12:28:25,180 DEBUG Visiting attribute path : app
+12:28:25,180 DEBUG Visiting attribute path : building
+12:28:25,180 DEBUG Visiting attribute path : city
+12:28:25,180 DEBUG Visiting attribute path : country
+12:28:25,180 DEBUG Visiting attribute path : region
+12:28:25,180 DEBUG Visiting attribute path : street
+12:28:25,180 DEBUG Visiting attribute path : user
+12:28:25,180 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cf411]
+12:28:25,180 DEBUG Visiting attribute path : user.birthDate
+12:28:25,180 DEBUG Visiting attribute path : user.email
+12:28:25,180 DEBUG Visiting attribute path : user.login
+12:28:25,188 DEBUG Visiting attribute path : user.password
+12:28:25,188 DEBUG Visiting attribute path : user.role
+12:28:25,188 DEBUG Visiting attribute path : user.userMusicTypes
+12:28:25,188 DEBUG Visiting attribute path : user.adress
+12:28:25,188 DEBUG Property path deemed to be circular : user.adress
+12:28:25,188 DEBUG Building LoadPlan...
+12:28:25,189 DEBUG processing queryspace <gen:0>
+12:28:25,189 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+
+12:28:25,190 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [NONE]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_, user1_.id as id1_3_1_, user1_.birthDate as birthDat2_3_1_, user1_.email as email3_3_1_, user1_.login as login4_3_1_, user1_.password as password5_3_1_, user1_.id_role as id_role6_3_1_ from adress adress0_ inner join user user1_ on adress0_.id_user=user1_.id where adress0_.id=?
+12:28:25,190 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c2b5e0]
+12:28:25,190 DEBUG Visiting attribute path : app
+12:28:25,190 DEBUG Visiting attribute path : building
+12:28:25,190 DEBUG Visiting attribute path : city
+12:28:25,190 DEBUG Visiting attribute path : country
+12:28:25,190 DEBUG Visiting attribute path : region
+12:28:25,190 DEBUG Visiting attribute path : street
+12:28:25,190 DEBUG Visiting attribute path : user
+12:28:25,190 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1471876]
+12:28:25,190 DEBUG Visiting attribute path : user.birthDate
+12:28:25,190 DEBUG Visiting attribute path : user.email
+12:28:25,190 DEBUG Visiting attribute path : user.login
+12:28:25,190 DEBUG Visiting attribute path : user.password
+12:28:25,190 DEBUG Visiting attribute path : user.role
+12:28:25,190 DEBUG Visiting attribute path : user.userMusicTypes
+12:28:25,191 DEBUG Visiting attribute path : user.adress
+12:28:25,191 DEBUG Property path deemed to be circular : user.adress
+12:28:25,191 DEBUG Building LoadPlan...
+12:28:25,191 DEBUG processing queryspace <gen:0>
+12:28:25,191 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+
+12:28:25,196 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [READ]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_, user1_.id as id1_3_1_, user1_.birthDate as birthDat2_3_1_, user1_.email as email3_3_1_, user1_.login as login4_3_1_, user1_.password as password5_3_1_, user1_.id_role as id_role6_3_1_ from adress adress0_ inner join user user1_ on adress0_.id_user=user1_.id where adress0_.id=?
+12:28:25,196 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e6b09]
+12:28:25,196 DEBUG Visiting attribute path : app
+12:28:25,196 DEBUG Visiting attribute path : building
+12:28:25,196 DEBUG Visiting attribute path : city
+12:28:25,196 DEBUG Visiting attribute path : country
+12:28:25,196 DEBUG Visiting attribute path : region
+12:28:25,196 DEBUG Visiting attribute path : street
+12:28:25,196 DEBUG Visiting attribute path : user
+12:28:25,196 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1adda7]
+12:28:25,196 DEBUG Building LoadPlan...
+12:28:25,197 DEBUG processing queryspace <gen:0>
+12:28:25,197 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,197 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [UPGRADE]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,197 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1cdfefe]
+12:28:25,197 DEBUG Visiting attribute path : app
+12:28:25,197 DEBUG Visiting attribute path : building
+12:28:25,197 DEBUG Visiting attribute path : city
+12:28:25,197 DEBUG Visiting attribute path : country
+12:28:25,197 DEBUG Visiting attribute path : region
+12:28:25,197 DEBUG Visiting attribute path : street
+12:28:25,197 DEBUG Visiting attribute path : user
+12:28:25,197 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@276359]
+12:28:25,198 DEBUG Building LoadPlan...
+12:28:25,198 DEBUG processing queryspace <gen:0>
+12:28:25,198 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,198 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [UPGRADE_NOWAIT]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,198 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1eb83d5]
+12:28:25,198 DEBUG Visiting attribute path : app
+12:28:25,198 DEBUG Visiting attribute path : building
+12:28:25,198 DEBUG Visiting attribute path : city
+12:28:25,198 DEBUG Visiting attribute path : country
+12:28:25,198 DEBUG Visiting attribute path : region
+12:28:25,198 DEBUG Visiting attribute path : street
+12:28:25,198 DEBUG Visiting attribute path : user
+12:28:25,204 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ad4264]
+12:28:25,204 DEBUG Building LoadPlan...
+12:28:25,204 DEBUG processing queryspace <gen:0>
+12:28:25,204 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,204 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [UPGRADE_SKIPLOCKED]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,204 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e1ea76]
+12:28:25,204 DEBUG Visiting attribute path : app
+12:28:25,205 DEBUG Visiting attribute path : building
+12:28:25,205 DEBUG Visiting attribute path : city
+12:28:25,205 DEBUG Visiting attribute path : country
+12:28:25,205 DEBUG Visiting attribute path : region
+12:28:25,205 DEBUG Visiting attribute path : street
+12:28:25,205 DEBUG Visiting attribute path : user
+12:28:25,205 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@150ebab]
+12:28:25,205 DEBUG Building LoadPlan...
+12:28:25,205 DEBUG processing queryspace <gen:0>
+12:28:25,213 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,214 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [FORCE]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,214 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f310c0]
+12:28:25,214 DEBUG Visiting attribute path : app
+12:28:25,214 DEBUG Visiting attribute path : building
+12:28:25,214 DEBUG Visiting attribute path : city
+12:28:25,214 DEBUG Visiting attribute path : country
+12:28:25,214 DEBUG Visiting attribute path : region
+12:28:25,214 DEBUG Visiting attribute path : street
+12:28:25,214 DEBUG Visiting attribute path : user
+12:28:25,214 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8486b]
+12:28:25,214 DEBUG Building LoadPlan...
+12:28:25,214 DEBUG processing queryspace <gen:0>
+12:28:25,215 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,215 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [PESSIMISTIC_READ]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? lock in share mode
+12:28:25,215 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ca7834]
+12:28:25,215 DEBUG Visiting attribute path : app
+12:28:25,215 DEBUG Visiting attribute path : building
+12:28:25,215 DEBUG Visiting attribute path : city
+12:28:25,215 DEBUG Visiting attribute path : country
+12:28:25,215 DEBUG Visiting attribute path : region
+12:28:25,215 DEBUG Visiting attribute path : street
+12:28:25,215 DEBUG Visiting attribute path : user
+12:28:25,215 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@db9569]
+12:28:25,215 DEBUG Building LoadPlan...
+12:28:25,215 DEBUG processing queryspace <gen:0>
+12:28:25,215 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,216 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [PESSIMISTIC_WRITE]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,216 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e20ef]
+12:28:25,229 DEBUG Visiting attribute path : app
+12:28:25,229 DEBUG Visiting attribute path : building
+12:28:25,229 DEBUG Visiting attribute path : city
+12:28:25,229 DEBUG Visiting attribute path : country
+12:28:25,229 DEBUG Visiting attribute path : region
+12:28:25,229 DEBUG Visiting attribute path : street
+12:28:25,229 DEBUG Visiting attribute path : user
+12:28:25,229 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1391d27]
+12:28:25,230 DEBUG Building LoadPlan...
+12:28:25,230 DEBUG processing queryspace <gen:0>
+12:28:25,230 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,230 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [PESSIMISTIC_FORCE_INCREMENT]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=? for update
+12:28:25,230 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a92583]
+12:28:25,230 DEBUG Visiting attribute path : app
+12:28:25,230 DEBUG Visiting attribute path : building
+12:28:25,230 DEBUG Visiting attribute path : city
+12:28:25,230 DEBUG Visiting attribute path : country
+12:28:25,230 DEBUG Visiting attribute path : region
+12:28:25,230 DEBUG Visiting attribute path : street
+12:28:25,230 DEBUG Visiting attribute path : user
+12:28:25,231 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16e3879]
+12:28:25,231 DEBUG Building LoadPlan...
+12:28:25,231 DEBUG processing queryspace <gen:0>
+12:28:25,231 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,231 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [OPTIMISTIC]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=?
+12:28:25,231 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@13da321]
+12:28:25,231 DEBUG Visiting attribute path : app
+12:28:25,231 DEBUG Visiting attribute path : building
+12:28:25,231 DEBUG Visiting attribute path : city
+12:28:25,231 DEBUG Visiting attribute path : country
+12:28:25,231 DEBUG Visiting attribute path : region
+12:28:25,231 DEBUG Visiting attribute path : street
+12:28:25,231 DEBUG Visiting attribute path : user
+12:28:25,232 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1268b0c]
+12:28:25,232 DEBUG Building LoadPlan...
+12:28:25,232 DEBUG processing queryspace <gen:0>
+12:28:25,232 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=ua.org.oa.grinchenkoa.webusers.entities.Adress.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+          - SQL table alias mapping - adress0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+12:28:25,232 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [OPTIMISTIC_FORCE_INCREMENT]: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=?
+12:28:25,232 DEBUG Static select for action ACTION_MERGE on entity ua.org.oa.grinchenkoa.webusers.entities.Adress: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=?
+12:28:25,232 DEBUG Static select for action ACTION_REFRESH on entity ua.org.oa.grinchenkoa.webusers.entities.Adress: select adress0_.id as id1_0_0_, adress0_.app as app2_0_0_, adress0_.building as building3_0_0_, adress0_.city as city4_0_0_, adress0_.country as country5_0_0_, adress0_.region as region6_0_0_, adress0_.street as street7_0_0_, adress0_.id_user as id_user8_0_0_ from adress adress0_ where adress0_.id=?
+12:28:25,236 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.Adress [NONE]: select adress0_.id as id1_0_1_, adress0_.app as app2_0_1_, adress0_.building as building3_0_1_, adress0_.city as city4_0_1_, adress0_.country as country5_0_1_, adress0_.region as region6_0_1_, adress0_.street as street7_0_1_, adress0_.id_user as id_user8_0_1_, user1_.id as id1_3_0_, user1_.birthDate as birthDat2_3_0_, user1_.email as email3_3_0_, user1_.login as login4_3_0_, user1_.password as password5_3_0_, user1_.id_role as id_role6_3_0_ from adress adress0_ inner join user user1_ on adress0_.id_user=user1_.id where adress0_.id_user=?
+12:28:25,236 DEBUG Static SQL for entity: ua.org.oa.grinchenkoa.webusers.entities.UserMusicType
+12:28:25,236 DEBUG  Version select: select id from usermusictype where id =?
+12:28:25,236 DEBUG  Snapshot select: select usermusict_.id, usermusict_.id_musicType as id_music2_4_, usermusict_.id_user as id_user3_4_ from usermusictype usermusict_ where usermusict_.id=?
+12:28:25,236 DEBUG  Insert 0: insert into usermusictype (id_musicType, id_user, id) values (?, ?, ?)
+12:28:25,236 DEBUG  Update 0: update usermusictype set id_musicType=?, id_user=? where id=?
+12:28:25,236 DEBUG  Delete 0: delete from usermusictype where id=?
+12:28:25,236 DEBUG  Identity insert: insert into usermusictype (id_musicType, id_user) values (?, ?)
+12:28:25,236 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d9df49]
+12:28:25,236 DEBUG Visiting attribute path : musicType
+12:28:25,237 DEBUG Visiting attribute path : user
+12:28:25,238 DEBUG Building LoadPlan...
+12:28:25,240 DEBUG processing queryspace <gen:0>
+12:28:25,240 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,240 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [NONE]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,240 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1895b43]
+12:28:25,240 DEBUG Visiting attribute path : musicType
+12:28:25,240 DEBUG Visiting attribute path : user
+12:28:25,240 DEBUG Building LoadPlan...
+12:28:25,240 DEBUG processing queryspace <gen:0>
+12:28:25,241 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,241 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [READ]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,241 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8ddc7]
+12:28:25,241 DEBUG Visiting attribute path : musicType
+12:28:25,241 DEBUG Visiting attribute path : user
+12:28:25,241 DEBUG Building LoadPlan...
+12:28:25,241 DEBUG processing queryspace <gen:0>
+12:28:25,241 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,242 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [UPGRADE]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,242 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1bd13aa]
+12:28:25,242 DEBUG Visiting attribute path : musicType
+12:28:25,242 DEBUG Visiting attribute path : user
+12:28:25,242 DEBUG Building LoadPlan...
+12:28:25,242 DEBUG processing queryspace <gen:0>
+12:28:25,242 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,242 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [UPGRADE_NOWAIT]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,242 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@514440]
+12:28:25,242 DEBUG Visiting attribute path : musicType
+12:28:25,242 DEBUG Visiting attribute path : user
+12:28:25,242 DEBUG Building LoadPlan...
+12:28:25,243 DEBUG processing queryspace <gen:0>
+12:28:25,243 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,243 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [UPGRADE_SKIPLOCKED]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,243 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c4fcb6]
+12:28:25,243 DEBUG Visiting attribute path : musicType
+12:28:25,243 DEBUG Visiting attribute path : user
+12:28:25,243 DEBUG Building LoadPlan...
+12:28:25,244 DEBUG processing queryspace <gen:0>
+12:28:25,244 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,244 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [FORCE]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,245 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b3cbc9]
+12:28:25,245 DEBUG Visiting attribute path : musicType
+12:28:25,245 DEBUG Visiting attribute path : user
+12:28:25,245 DEBUG Building LoadPlan...
+12:28:25,245 DEBUG processing queryspace <gen:0>
+12:28:25,245 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,245 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [PESSIMISTIC_READ]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? lock in share mode
+12:28:25,245 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41ca9a]
+12:28:25,245 DEBUG Visiting attribute path : musicType
+12:28:25,245 DEBUG Visiting attribute path : user
+12:28:25,246 DEBUG Building LoadPlan...
+12:28:25,246 DEBUG processing queryspace <gen:0>
+12:28:25,246 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,246 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [PESSIMISTIC_WRITE]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,246 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72b4dc]
+12:28:25,246 DEBUG Visiting attribute path : musicType
+12:28:25,246 DEBUG Visiting attribute path : user
+12:28:25,246 DEBUG Building LoadPlan...
+12:28:25,246 DEBUG processing queryspace <gen:0>
+12:28:25,247 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,247 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [PESSIMISTIC_FORCE_INCREMENT]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=? for update
+12:28:25,247 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b66f75]
+12:28:25,247 DEBUG Visiting attribute path : musicType
+12:28:25,247 DEBUG Visiting attribute path : user
+12:28:25,247 DEBUG Building LoadPlan...
+12:28:25,247 DEBUG processing queryspace <gen:0>
+12:28:25,247 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,247 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [OPTIMISTIC]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,248 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a89415]
+12:28:25,248 DEBUG Visiting attribute path : musicType
+12:28:25,248 DEBUG Visiting attribute path : user
+12:28:25,248 DEBUG Building LoadPlan...
+12:28:25,248 DEBUG processing queryspace <gen:0>
+12:28:25,248 DEBUG LoadPlan(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - Returns
+       - EntityReturnImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:0>, path=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+12:28:25,248 DEBUG Static select for entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType [OPTIMISTIC_FORCE_INCREMENT]: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,248 DEBUG Static select for action ACTION_MERGE on entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,249 DEBUG Static select for action ACTION_REFRESH on entity ua.org.oa.grinchenkoa.webusers.entities.UserMusicType: select usermusict0_.id as id1_4_0_, usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id_user as id_user3_4_0_ from usermusictype usermusict0_ where usermusict0_.id=?
+12:28:25,257 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1de4dff]
+12:28:25,257 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d2c849]
+12:28:25,259 DEBUG Visiting attribute path : birthDate
+12:28:25,259 DEBUG Visiting attribute path : email
+12:28:25,259 DEBUG Visiting attribute path : login
+12:28:25,259 DEBUG Visiting attribute path : password
+12:28:25,259 DEBUG Visiting attribute path : role
+12:28:25,259 DEBUG Property path deemed to be circular : role
+12:28:25,259 DEBUG Visiting attribute path : userMusicTypes
+12:28:25,259 DEBUG Visiting attribute path : adress
+12:28:25,259 DEBUG Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d5c2c6]
+12:28:25,260 DEBUG Visiting attribute path : adress.app
+12:28:25,260 DEBUG Visiting attribute path : adress.building
+12:28:25,260 DEBUG Visiting attribute path : adress.city
+12:28:25,260 DEBUG Visiting attribute path : adress.country
+12:28:25,260 DEBUG Visiting attribute path : adress.region
+12:28:25,260 DEBUG Visiting attribute path : adress.street
+12:28:25,260 DEBUG Visiting attribute path : adress.user
+12:28:25,260 DEBUG Property path deemed to be circular : adress.user
+12:28:25,260 DEBUG Building LoadPlan...
+12:28:25,263 DEBUG processing queryspace <gen:0>
+12:28:25,264 DEBUG LoadPlan(collection=ua.org.oa.grinchenkoa.webusers.entities.Role.users)
+    - Returns
+       - CollectionReturnImpl(collection=ua.org.oa.grinchenkoa.webusers.entities.Role.users, querySpaceUid=<gen:0>, path=[ua.org.oa.grinchenkoa.webusers.entities.Role.users])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=ua.org.oa.grinchenkoa.webusers.entities.User, querySpaceUid=<gen:1>, path=[ua.org.oa.grinchenkoa.webusers.entities.Role.users].<elements>)
+             - EntityAttributeFetchImpl(entity=ua.org.oa.grinchenkoa.webusers.entities.Adress, querySpaceUid=<gen:2>, path=[ua.org.oa.grinchenkoa.webusers.entities.Role.users].<elements>.adress)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ua.org.oa.grinchenkoa.webusers.entities.Role.users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_role6_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_3_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.User)
+                - SQL table alias mapping - users0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(adress)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=ua.org.oa.grinchenkoa.webusers.entities.Adress)
+                      - SQL table alias mapping - adress1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+12:28:25,265 DEBUG Static select for collection ua.org.oa.grinchenkoa.webusers.entities.Role.users: select users0_.id_role as id_role6_3_0_, users0_.id as id1_3_0_, users0_.id as id1_3_1_, users0_.birthDate as birthDat2_3_1_, users0_.email as email3_3_1_, users0_.login as login4_3_1_, users0_.password as password5_3_1_, users0_.id_role as id_role6_3_1_, adress1_.id as id1_0_2_, adress1_.app as app2_0_2_, adress1_.building as building3_0_2_, adress1_.city as city4_0_2_, adress1_.country as country5_0_2_, adress1_.region as region6_0_2_, adress1_.street as street7_0_2_, adress1_.id_user as id_user8_0_2_ from user users0_ left outer join adress adress1_ on users0_.id=adress1_.id_user where users0_.id_role=?
+12:28:25,265 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1cba5a]
+12:28:25,265 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e7a27]
+12:28:25,265 DEBUG Visiting attribute path : musicType
+12:28:25,265 DEBUG Property path deemed to be circular : musicType
+12:28:25,265 DEBUG Visiting attribute path : user
+12:28:25,266 DEBUG Building LoadPlan...
+12:28:25,266 DEBUG processing queryspace <gen:0>
+12:28:25,266 DEBUG LoadPlan(collection=ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes)
+    - Returns
+       - CollectionReturnImpl(collection=ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes, querySpaceUid=<gen:0>, path=[ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:1>, path=[ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_music2_4_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_4_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+                - SQL table alias mapping - usermusict0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+12:28:25,266 DEBUG Static select for collection ua.org.oa.grinchenkoa.webusers.entities.MusicType.userMusicTypes: select usermusict0_.id_musicType as id_music2_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_musicType=?
+12:28:25,267 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@e466b0]
+12:28:25,267 DEBUG Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@111ecde]
+12:28:25,267 DEBUG Visiting attribute path : musicType
+12:28:25,267 DEBUG Visiting attribute path : user
+12:28:25,267 DEBUG Property path deemed to be circular : user
+12:28:25,267 DEBUG Building LoadPlan...
+12:28:25,267 DEBUG processing queryspace <gen:0>
+12:28:25,268 DEBUG LoadPlan(collection=ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes)
+    - Returns
+       - CollectionReturnImpl(collection=ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes, querySpaceUid=<gen:0>, path=[ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType, querySpaceUid=<gen:1>, path=[ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes)
+          - SQL table alias mapping - usermusict0_
+          - alias suffix - 0_
+          - suffixed key columns - {id_user3_4_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_4_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ua.org.oa.grinchenkoa.webusers.entities.UserMusicType)
+                - SQL table alias mapping - usermusict0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+12:28:25,268 DEBUG Static select for collection ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes: select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,268 DEBUG Instantiated session factory
+12:28:25,273 DEBUG No JtaPlatform was specified, checking resolver
+12:28:25,274 DEBUG No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+12:28:25,279 DEBUG Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:28:25,281 DEBUG Checking 0 named HQL queries
+12:28:25,281 DEBUG Checking 0 named SQL queries
+12:28:25,283 DEBUG Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@62c20e
+12:28:25,284 DEBUG Registering SessionFactory: 85427a54-a107-441f-bab2-38e383cfc055 (<unnamed>)
+12:28:25,284 DEBUG Not binding SessionFactory to JNDI, no JNDI name configured
+12:28:25,360 DEBUG Statistics initialized [enabled=false]
+12:28:25,384 DEBUG select this_.id as id1_3_1_, this_.birthDate as birthDat2_3_1_, this_.email as email3_3_1_, this_.login as login4_3_1_, this_.password as password5_3_1_, this_.id_role as id_role6_3_1_, adress2_.id as id1_0_0_, adress2_.app as app2_0_0_, adress2_.building as building3_0_0_, adress2_.city as city4_0_0_, adress2_.country as country5_0_0_, adress2_.region as region6_0_0_, adress2_.street as street7_0_0_, adress2_.id_user as id_user8_0_0_ from user this_ left outer join adress adress2_ on this_.id=adress2_.id_user where this_.login like ?
+12:28:25,406 DEBUG Result set row: 0
+12:28:25,408 DEBUG Result row: null, EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,419 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,432 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,437 DEBUG Returning a Reference to the SessionFactory
+12:28:25,438 DEBUG Returning a Reference to the SessionFactory
+12:28:25,440 DEBUG select user0_.id as id1_3_0_, user0_.birthDate as birthDat2_3_0_, user0_.email as email3_3_0_, user0_.login as login4_3_0_, user0_.password as password5_3_0_, user0_.id_role as id_role6_3_0_, adress1_.id as id1_0_1_, adress1_.app as app2_0_1_, adress1_.building as building3_0_1_, adress1_.city as city4_0_1_, adress1_.country as country5_0_1_, adress1_.region as region6_0_1_, adress1_.street as street7_0_1_, adress1_.id_user as id_user8_0_1_ from user user0_ left outer join adress adress1_ on user0_.id=adress1_.id_user where user0_.id=?
+12:28:25,443 DEBUG Starting ResultSet row #0
+12:28:25,444 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,446 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,446 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,447 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,447 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.User#110
+12:28:25,447 DEBUG Returning a Reference to the SessionFactory
+12:28:25,447 DEBUG Returning a Reference to the SessionFactory
+12:28:25,450 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,451 DEBUG begin
+12:28:25,453 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,454 DEBUG select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,454 DEBUG Starting ResultSet row #0
+12:28:25,454 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,455 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,455 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,455 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,455 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.Role#3
+12:28:25,455 DEBUG committing
+12:28:25,456 DEBUG Returning a Reference to the SessionFactory
+12:28:25,459 DEBUG select this_.id as id1_3_1_, this_.birthDate as birthDat2_3_1_, this_.email as email3_3_1_, this_.login as login4_3_1_, this_.password as password5_3_1_, this_.id_role as id_role6_3_1_, adress2_.id as id1_0_0_, adress2_.app as app2_0_0_, adress2_.building as building3_0_0_, adress2_.city as city4_0_0_, adress2_.country as country5_0_0_, adress2_.region as region6_0_0_, adress2_.street as street7_0_0_, adress2_.id_user as id_user8_0_0_ from user this_ left outer join adress adress2_ on this_.id=adress2_.id_user
+12:28:25,461 DEBUG Result set row: 0
+12:28:25,461 DEBUG Result row: null, EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#59]
+12:28:25,461 DEBUG Result set row: 1
+12:28:25,462 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#53], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#109]
+12:28:25,463 DEBUG Result set row: 2
+12:28:25,463 DEBUG Result row: null, EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,463 DEBUG Result set row: 3
+12:28:25,464 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#55], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#111]
+12:28:25,464 DEBUG Result set row: 4
+12:28:25,465 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#65], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#115]
+12:28:25,465 DEBUG Result set row: 5
+12:28:25,465 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#57], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#118]
+12:28:25,465 DEBUG Result set row: 6
+12:28:25,466 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#60], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#123]
+12:28:25,466 DEBUG Result set row: 7
+12:28:25,466 DEBUG Result row: EntityKey[ua.org.oa.grinchenkoa.webusers.entities.Adress#67], EntityKey[ua.org.oa.grinchenkoa.webusers.entities.User#126]
+12:28:25,466 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#59]
+12:28:25,467 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#59]
+12:28:25,467 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#53]
+12:28:25,467 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#53]
+12:28:25,467 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#109]
+12:28:25,467 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#109]
+12:28:25,467 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#110]
+12:28:25,468 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#55]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#55]
+12:28:25,468 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#111]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#111]
+12:28:25,468 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#65]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#65]
+12:28:25,468 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#115]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#115]
+12:28:25,468 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#57]
+12:28:25,468 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#57]
+12:28:25,469 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#118]
+12:28:25,469 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#118]
+12:28:25,469 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#60]
+12:28:25,469 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#60]
+12:28:25,469 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#123]
+12:28:25,470 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#123]
+12:28:25,470 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Adress#67]
+12:28:25,470 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Adress#67]
+12:28:25,470 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.User#126]
+12:28:25,478 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.User#126]
+12:28:25,478 DEBUG Returning a Reference to the SessionFactory
+12:28:25,478 DEBUG Returning a Reference to the SessionFactory
+12:28:25,478 DEBUG Returning a Reference to the SessionFactory
+12:28:25,478 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,479 DEBUG Returning a Reference to the SessionFactory
+12:28:25,509 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,509 DEBUG begin
+12:28:25,511 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#59]
+12:28:25,511 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,512 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#59]
+12:28:25,514 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,514 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#59]
+12:28:25,515 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,515 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,515 DEBUG Done loading collection
+12:28:25,515 DEBUG committing
+12:28:25,522 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,522 DEBUG begin
+12:28:25,523 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.Role#1]
+12:28:25,523 DEBUG select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,524 DEBUG Starting ResultSet row #0
+12:28:25,524 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,524 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Role#1]
+12:28:25,524 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Role#1]
+12:28:25,524 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,524 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.Role#1
+12:28:25,524 DEBUG committing
+12:28:25,525 DEBUG Returning a Reference to the SessionFactory
+12:28:25,527 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,528 DEBUG begin
+12:28:25,528 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#109]
+12:28:25,528 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,529 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#109]
+12:28:25,529 DEBUG Starting ResultSet row #0
+12:28:25,530 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#109]
+12:28:25,530 DEBUG Starting ResultSet row #1
+12:28:25,530 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#109]
+12:28:25,530 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#77]
+12:28:25,531 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#77]
+12:28:25,531 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#78]
+12:28:25,531 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#78]
+12:28:25,531 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,531 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#109]
+12:28:25,531 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,531 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,531 DEBUG Done loading collection
+12:28:25,531 DEBUG committing
+12:28:25,532 DEBUG Returning a Reference to the SessionFactory
+12:28:25,532 DEBUG Returning a Reference to the SessionFactory
+12:28:25,532 DEBUG Returning a Reference to the SessionFactory
+12:28:25,538 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,539 DEBUG begin
+12:28:25,539 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,539 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,547 DEBUG Starting ResultSet row #0
+12:28:25,547 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,547 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,547 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,547 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,547 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#2
+12:28:25,547 DEBUG committing
+12:28:25,548 DEBUG Returning a Reference to the SessionFactory
+12:28:25,548 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,548 DEBUG begin
+12:28:25,548 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,549 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,549 DEBUG Starting ResultSet row #0
+12:28:25,550 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,550 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,550 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,550 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,550 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#1
+12:28:25,550 DEBUG committing
+12:28:25,551 DEBUG Returning a Reference to the SessionFactory
+12:28:25,552 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,552 DEBUG begin
+12:28:25,553 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#110]
+12:28:25,553 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,555 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#110]
+12:28:25,555 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,555 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#110]
+12:28:25,555 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,556 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,556 DEBUG Done loading collection
+12:28:25,556 DEBUG committing
+12:28:25,557 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,557 DEBUG begin
+12:28:25,557 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,557 DEBUG select role0_.id as id1_2_0_, role0_.roleName as roleName2_2_0_ from role role0_ where role0_.id=?
+12:28:25,559 DEBUG Starting ResultSet row #0
+12:28:25,559 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,559 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,559 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.Role#3]
+12:28:25,559 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,559 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.Role#3
+12:28:25,560 DEBUG committing
+12:28:25,562 DEBUG Returning a Reference to the SessionFactory
+12:28:25,563 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,563 DEBUG begin
+12:28:25,564 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#111]
+12:28:25,564 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,564 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#111]
+12:28:25,565 DEBUG Starting ResultSet row #0
+12:28:25,565 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#111]
+12:28:25,565 DEBUG Starting ResultSet row #1
+12:28:25,565 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#111]
+12:28:25,566 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#79]
+12:28:25,566 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#79]
+12:28:25,566 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#80]
+12:28:25,566 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#80]
+12:28:25,566 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,566 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#111]
+12:28:25,566 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,566 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,566 DEBUG Done loading collection
+12:28:25,566 DEBUG committing
+12:28:25,567 DEBUG Returning a Reference to the SessionFactory
+12:28:25,567 DEBUG Returning a Reference to the SessionFactory
+12:28:25,567 DEBUG Returning a Reference to the SessionFactory
+12:28:25,567 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,567 DEBUG begin
+12:28:25,567 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,568 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,569 DEBUG Starting ResultSet row #0
+12:28:25,569 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,570 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,570 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,570 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,570 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#5
+12:28:25,571 DEBUG committing
+12:28:25,571 DEBUG Returning a Reference to the SessionFactory
+12:28:25,571 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,572 DEBUG begin
+12:28:25,572 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,572 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,573 DEBUG Starting ResultSet row #0
+12:28:25,573 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,573 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,573 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,573 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,573 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#4
+12:28:25,573 DEBUG committing
+12:28:25,574 DEBUG Returning a Reference to the SessionFactory
+12:28:25,574 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,574 DEBUG begin
+12:28:25,575 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#115]
+12:28:25,575 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,576 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#115]
+12:28:25,576 DEBUG Starting ResultSet row #0
+12:28:25,577 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#115]
+12:28:25,577 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#127]
+12:28:25,577 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#127]
+12:28:25,577 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,577 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#115]
+12:28:25,577 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,577 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,577 DEBUG Done loading collection
+12:28:25,578 DEBUG committing
+12:28:25,578 DEBUG Returning a Reference to the SessionFactory
+12:28:25,578 DEBUG Returning a Reference to the SessionFactory
+12:28:25,578 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,578 DEBUG begin
+12:28:25,579 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,579 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,580 DEBUG Starting ResultSet row #0
+12:28:25,580 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,581 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,581 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,581 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,581 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#2
+12:28:25,581 DEBUG committing
+12:28:25,582 DEBUG Returning a Reference to the SessionFactory
+12:28:25,582 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,583 DEBUG begin
+12:28:25,583 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,583 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,585 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,585 DEBUG Starting ResultSet row #0
+12:28:25,585 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,586 DEBUG Starting ResultSet row #1
+12:28:25,586 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,586 DEBUG Starting ResultSet row #2
+12:28:25,586 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,586 DEBUG Starting ResultSet row #3
+12:28:25,586 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,586 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#90]
+12:28:25,587 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#90]
+12:28:25,587 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#91]
+12:28:25,587 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#91]
+12:28:25,587 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#92]
+12:28:25,587 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#92]
+12:28:25,587 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#93]
+12:28:25,587 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#93]
+12:28:25,587 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,587 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#118]
+12:28:25,587 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,587 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,588 DEBUG Done loading collection
+12:28:25,588 DEBUG committing
+12:28:25,588 DEBUG Returning a Reference to the SessionFactory
+12:28:25,588 DEBUG Returning a Reference to the SessionFactory
+12:28:25,588 DEBUG Returning a Reference to the SessionFactory
+12:28:25,588 DEBUG Returning a Reference to the SessionFactory
+12:28:25,588 DEBUG Returning a Reference to the SessionFactory
+12:28:25,588 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,588 DEBUG begin
+12:28:25,589 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,589 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,589 DEBUG Starting ResultSet row #0
+12:28:25,589 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,590 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,590 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,590 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,590 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#2
+12:28:25,590 DEBUG committing
+12:28:25,590 DEBUG Returning a Reference to the SessionFactory
+12:28:25,591 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,591 DEBUG begin
+12:28:25,591 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,591 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,592 DEBUG Starting ResultSet row #0
+12:28:25,592 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,592 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,592 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#4]
+12:28:25,592 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,592 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#4
+12:28:25,592 DEBUG committing
+12:28:25,593 DEBUG Returning a Reference to the SessionFactory
+12:28:25,593 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,593 DEBUG begin
+12:28:25,593 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#3]
+12:28:25,593 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,594 DEBUG Starting ResultSet row #0
+12:28:25,594 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,594 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#3]
+12:28:25,594 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#3]
+12:28:25,594 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,595 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#3
+12:28:25,595 DEBUG committing
+12:28:25,595 DEBUG Returning a Reference to the SessionFactory
+12:28:25,595 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,595 DEBUG begin
+12:28:25,596 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,596 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,630 DEBUG Starting ResultSet row #0
+12:28:25,630 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,631 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,631 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,631 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,631 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#1
+12:28:25,631 DEBUG committing
+12:28:25,631 DEBUG Returning a Reference to the SessionFactory
+12:28:25,632 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,632 DEBUG begin
+12:28:25,632 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#123]
+12:28:25,633 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,633 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#123]
+12:28:25,634 DEBUG Starting ResultSet row #0
+12:28:25,634 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#123]
+12:28:25,634 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#87]
+12:28:25,634 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#87]
+12:28:25,634 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,634 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#123]
+12:28:25,634 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,634 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,634 DEBUG Done loading collection
+12:28:25,634 DEBUG committing
+12:28:25,635 DEBUG Returning a Reference to the SessionFactory
+12:28:25,635 DEBUG Returning a Reference to the SessionFactory
+12:28:25,635 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,635 DEBUG begin
+12:28:25,636 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,636 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,638 DEBUG Starting ResultSet row #0
+12:28:25,638 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,638 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,638 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#2]
+12:28:25,638 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,638 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#2
+12:28:25,641 DEBUG committing
+12:28:25,641 DEBUG Returning a Reference to the SessionFactory
+12:28:25,642 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,642 DEBUG begin
+12:28:25,643 DEBUG Loading collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#126]
+12:28:25,643 DEBUG select usermusict0_.id_user as id_user3_4_0_, usermusict0_.id as id1_4_0_, usermusict0_.id as id1_4_1_, usermusict0_.id_musicType as id_music2_4_1_, usermusict0_.id_user as id_user3_4_1_ from usermusictype usermusict0_ where usermusict0_.id_user=?
+12:28:25,644 DEBUG Preparing collection intializer : [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#126]
+12:28:25,644 DEBUG Starting ResultSet row #0
+12:28:25,644 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#126]
+12:28:25,644 DEBUG Starting ResultSet row #1
+12:28:25,644 DEBUG Found row of collection: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#126]
+12:28:25,645 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#130]
+12:28:25,645 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#130]
+12:28:25,645 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#131]
+12:28:25,645 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.UserMusicType#131]
+12:28:25,645 DEBUG 1 collections were found in result set for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,645 DEBUG Collection fully initialized: [ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes#126]
+12:28:25,645 DEBUG 1 collections initialized for role: ua.org.oa.grinchenkoa.webusers.entities.User.userMusicTypes
+12:28:25,645 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,645 DEBUG Done loading collection
+12:28:25,645 DEBUG committing
+12:28:25,646 DEBUG Returning a Reference to the SessionFactory
+12:28:25,646 DEBUG Returning a Reference to the SessionFactory
+12:28:25,646 DEBUG Returning a Reference to the SessionFactory
+12:28:25,646 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,646 DEBUG begin
+12:28:25,647 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,647 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,648 DEBUG Starting ResultSet row #0
+12:28:25,648 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,648 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,648 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#5]
+12:28:25,648 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,648 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#5
+12:28:25,648 DEBUG committing
+12:28:25,649 DEBUG Returning a Reference to the SessionFactory
+12:28:25,649 DEBUG Lookup: uid=85427a54-a107-441f-bab2-38e383cfc055
+12:28:25,649 DEBUG begin
+12:28:25,649 DEBUG Initializing proxy: [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,649 DEBUG select musictype0_.id as id1_1_0_, musictype0_.typeName as typeName2_1_0_ from musictype musictype0_ where musictype0_.id=?
+12:28:25,657 DEBUG Starting ResultSet row #0
+12:28:25,657 DEBUG On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+12:28:25,658 DEBUG Resolving associations for [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,658 DEBUG Done materializing entity [ua.org.oa.grinchenkoa.webusers.entities.MusicType#1]
+12:28:25,658 DEBUG HHH000387: ResultSet's statement was not registered
+12:28:25,658 DEBUG Done entity load : ua.org.oa.grinchenkoa.webusers.entities.MusicType#1
+12:28:25,658 DEBUG committing
+12:28:25,659 DEBUG Returning a Reference to the SessionFactory
+12:28:37,063 DEBUG select this_.id as id1_3_1_, this_.birthDate as birthDat2_3_1_, this_.email as email3_3_1_, this_.login as login4_3_1_, this_.password as password5_3_1_, this_.id_role as id_role6_3_1_, adress2_.id as id1_0_0_, adress2_.app as app2_0_0_, adress2_.building as building3_0_0_, adress2_.city as city4_0_0_, adress2_.country as country5_0_0_, adress2_.region as region6_0_0_, adress2_.street as street7_0_0_, adress2_.id_user as id_user8_0_0_ from user this_ left outer join adress adress2_ on this_.id=adress2_.id_user where this_.login like ?
+12:28:54,188 DEBUG Connection pool now considered primed; min-size will be maintained

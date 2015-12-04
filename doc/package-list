@@ -1,6 +1,6 @@
 ua.org.oa.grinchenkoa.webusers.commands
-ua.org.oa.grinchenkoa.webusers.controller
 ua.org.oa.grinchenkoa.webusers.dao
 ua.org.oa.grinchenkoa.webusers.entities
 ua.org.oa.grinchenkoa.webusers.managers
-ua.org.oa.grinchenkoa.webusers.validservice
+ua.org.oa.grinchenkoa.webusers.services
+ua.org.oa.grinchenkoa.webusers.springController

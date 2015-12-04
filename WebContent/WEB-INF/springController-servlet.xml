@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	
+	<context:component-scan base-package="ua.org.oa.grinchenkoa.webusers.springController"/>
+	<context:component-scan base-package="ua.org.oa.grinchenkoa.webusers.dao"/>
+	<context:component-scan base-package="ua.org.oa.grinchenkoa.webusers.commands"/>
+	
+	<bean id="viewResolver"
+        class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    <property name="prefix" value="/"/>
+    <property name="suffix" value=""/>
+	</bean>
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+ 
+		<property name="annotatedClasses">
+			<list>
+				<value>ua.org.oa.grinchenkoa.webusers.entities.Adress</value>
+				<value>ua.org.oa.grinchenkoa.webusers.entities.MusicType</value>
+				<value>ua.org.oa.grinchenkoa.webusers.entities.Role</value>
+				<value>ua.org.oa.grinchenkoa.webusers.entities.User</value>
+			</list>
+		</property>
+ 
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+			</props>
+		</property>
+	</bean>
+ 
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/usersdb" />
+		<property name="username" value="root" />
+		<property name="password" value="54321" />
+	</bean>
+	
+</beans>

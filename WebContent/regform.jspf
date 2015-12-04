@@ -5,13 +5,23 @@
     <jsp:directive.page language="java"
         contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" />
         
-	<jsp:useBean id="user" class="ua.org.oa.grinchenkoa.webusers.entities.User"
-	scope="session" />
-	<jsp:useBean id="adress" class="ua.org.oa.grinchenkoa.webusers.entities.Adress"
-	scope="session" />
+	
 
 	<form name="loginform" method="POST" action="Controller">
-		<input type="hidden" name="command" value="registration"/>
+	
+	
+		<c:choose>
+			<c:when test="${not empty update}">
+				<input type="hidden" name="command" value="updating"/>
+			</c:when>
+			<c:otherwise>
+				<input type="hidden" name="command" value="registration"/>
+			</c:otherwise>
+		</c:choose>
+	
+		
+		
+		
  		<c:if test="${not empty errors}">  
 			<font color="red">
 				<c:forEach var="item" items="${errors.values()}">
@@ -21,7 +31,7 @@
     	</c:if>
 		<p>
 			<b>Login:</b>
-			<input type="text" name="login" value="${user.login}" size="30" maxlength="20"/> *
+			<input type="text" name="login" value="${constructingUser.login}" size="30" maxlength="20"/> *
 		</p>
 		<p>
 			<b>Password: </b>
@@ -170,31 +180,31 @@
 			</p>
 			<p>
 			<b>e-mail: </b>
-				<input type="text" name ="email" value="${user.email}" size="30" maxlength="25"/> *
+				<input type="text" name ="email" value="${constructingUser.email}" size="30" maxlength="25"/> *
 			</p>
 			<p>
 				<b>Country: </b>
-				<input type="text" name ="country" value="${adress.country}" size="25" maxlength="20"/>
+				<input type="text" name ="country" value="${constructingAdress.country}" size="25" maxlength="20"/>
 			</p>
 			<p>
 				<b>Region: </b>
-				<input type="text" name ="region" value="${adress.region}" size="25" maxlength="20"/>
+				<input type="text" name ="region" value="${constructingAdress.region}" size="25" maxlength="20"/>
 			</p>
 			<p>
 				<b>City: </b>
-				<input type="text" name ="city" value="${adress.city}" size="25" maxlength="20"/>
+				<input type="text" name ="city" value="${constructingAdress.city}" size="25" maxlength="20"/>
 			</p>
 			<p>
 				<b>Street: </b>
-				<input type="text" name ="street" value="${adress.street}" size="25" maxlength="20"/>
+				<input type="text" name ="street" value="${constructingAdress.street}" size="25" maxlength="20"/>
 			</p>
 			<p>
 				<b>Building: </b>
-				<input type="text" name ="building" value="${adress.building}" size="25" maxlength="20"/>
+				<input type="text" name ="building" value="${constructingAdress.building}" size="25" maxlength="20"/>
 			</p>
 			<p>
 				<b>App: </b>
-				<input type="text" name ="app" value="${adress.app}" size="25" maxlength="5"/>
+				<input type="text" name ="app" value="${constructingAdress.app}" size="25" maxlength="5"/>
 			</p>
 			<p><b>MusicTypes: </b> </p>
 			<p><input type="checkbox" name ="Rock"/>Rock</p>

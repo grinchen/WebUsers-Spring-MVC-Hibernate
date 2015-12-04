@@ -12,7 +12,6 @@ import javax.persistence.Table;
 
 /**
  * Class describes objects "adress" stored in database, implements Entity interface,
- * is bean-component in JSP
  * 
  * @author Andrei Grinchenko
  * 
@@ -97,6 +96,4 @@ public class Adress implements ua.org.oa.grinchenkoa.webusers.entities.Entity {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
-	
 }

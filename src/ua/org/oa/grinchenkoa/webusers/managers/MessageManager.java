@@ -61,5 +61,4 @@ public class MessageManager {
 	public String getMessage(String key) {
 		return resourseBundle.getString(key);
 	}
-	
 }

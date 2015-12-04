@@ -9,6 +9,8 @@ import org.hibernate.cfg.Configuration;
  * Util for getting Hibernate Session Factory
  *
  */
+
+@SuppressWarnings("deprecation")
 public class HibernateManager {
 	
 	private static SessionFactory sessionFactory;

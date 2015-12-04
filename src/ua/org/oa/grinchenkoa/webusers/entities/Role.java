@@ -1,18 +1,14 @@
 package ua.org.oa.grinchenkoa.webusers.entities;
 
-import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
 /**
  * 
  * Class describes objects "role" stored in database, implements Entity interface,
- * is bean-component in JSP
  * 
  * @author Andrei Grinchenko
  * 
@@ -29,9 +25,6 @@ public class Role implements ua.org.oa.grinchenkoa.webusers.entities.Entity{
 	@Column(name="roleName")
 	private String roleName;
 	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "role")
-	private Set<User> users; 
-	
 	public int getId() {
 		return id;
 	}
@@ -47,18 +40,6 @@ public class Role implements ua.org.oa.grinchenkoa.webusers.entities.Entity{
 	public void setRoleName(String role) {
 		this.roleName = role;
 	}
-	
-	
-	
-	public Set<User> getUsers() {
-		return users;
-	}
-	
-	
-	
-	public void setUsers(Set<User> users) {
-		this.users = users;
-	}
 
 	@Override
 	public int hashCode() {
@@ -67,7 +48,6 @@ public class Role implements ua.org.oa.grinchenkoa.webusers.entities.Entity{
 		result = prime * result + id;
 		result = prime * result
 				+ ((roleName == null) ? 0 : roleName.hashCode());
-		result = prime * result + ((users == null) ? 0 : users.hashCode());
 		return result;
 	}
 

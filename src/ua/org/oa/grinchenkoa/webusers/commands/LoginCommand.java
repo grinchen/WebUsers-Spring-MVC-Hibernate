@@ -5,6 +5,9 @@ import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import ua.org.oa.grinchenkoa.webusers.dao.Dao;
 import ua.org.oa.grinchenkoa.webusers.dao.DaoUser;
 import ua.org.oa.grinchenkoa.webusers.entities.User;
 import ua.org.oa.grinchenkoa.webusers.managers.ConfigurationManager;
@@ -16,8 +19,17 @@ import ua.org.oa.grinchenkoa.webusers.managers.MessageManager;
  * @author Andrei Grinchenko
  * 
  */
+
+@Service
 public class LoginCommand implements Command {
 
+	@Autowired
+	private DaoUser daoUser;
+
+	@Autowired
+	private Dao dao;
+	
+	
 	/**
 	 * {@inheritDoc}
 	 */
@@ -25,12 +37,12 @@ public class LoginCommand implements Command {
 	public String execute(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException, SQLException {
 		String page = null;
-		DaoUser<User> daoUser = new DaoUser<>();
 		String login = request.getParameter("login"); //getting login from the request
-		Integer id = daoUser.readId(login); //checking login and getting user's id, null if doesn't exist
+		String password = request.getParameter("password"); //getting password from the request
+		Integer id = daoUser.readId(login, password); //getting user's id, null if doesn't exist
 		/*if exists*/
 		if (id != null) { 	
-			User user = daoUser.read(id, User.class);  //reading user from DB
+			User user = (User) daoUser.read(id, User.class);  //reading user from DB
 			request.getSession().setAttribute("user", user); //and setting one into session
 			/*if user*/
 			if (user.getRole().getRoleName().equalsIgnoreCase(       	
@@ -52,7 +64,7 @@ public class LoginCommand implements Command {
 						ConfigurationManager.getInstance().getProperty("ADMIN"))){
 					/*getting list of all information about users from DB and setting attribute into request*/
 					request.setAttribute("userList", daoUser.readAllSorted());
-					/*admin's page*/		
+					/*admin's page*/
 					page = ConfigurationManager.getInstance().getProperty(				
 							ConfigurationManager.MAIN_ADMIN_PAGE_PATH);
 				}

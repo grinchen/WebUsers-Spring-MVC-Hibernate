@@ -2,6 +2,7 @@ package ua.org.oa.grinchenkoa.webusers.commands;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Service;
 import ua.org.oa.grinchenkoa.webusers.managers.ConfigurationManager;
 
 /**
@@ -12,6 +13,7 @@ import ua.org.oa.grinchenkoa.webusers.managers.ConfigurationManager;
  * 
  * @author Andrei Grinchenko
  */
+@Service
 public class NoCommand implements Command {
 
 	@Override

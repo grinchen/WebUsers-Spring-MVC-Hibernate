@@ -14,7 +14,7 @@
 		<body>
 			<b>ERROR! </b>
 			<font color="red">
- 				<c:out value="${errorMessage}"/>
+ 				<с:out value="${errorMessage}"/>
  			</font>
 		</body>
 	</html>
