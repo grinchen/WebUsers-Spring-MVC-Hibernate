@@ -54,7 +54,7 @@ public class Validations {
 		 * @return true if e-mail valid
 		 */
 		private static boolean validEmail(String email) {
-			Pattern pattern = Pattern.compile("\\w+@[a-zA-Z_-]+?\\.[a-zA-Z]{2,6}");
+			Pattern pattern = Pattern.compile("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 			Matcher matcher = pattern.matcher(email);
 			return matcher.matches();
 		}
@@ -124,10 +124,10 @@ public class Validations {
 			for (MusicType musicType : dao.readAll(MusicType.class)) {
 				if ("on".equals(request.getParameter(musicType.getMusicType()))) {
 					checkedMusicTypes.add(musicType);
+					
 				}
 			}
 			user.setMusicTypes(checkedMusicTypes);
-			
 			adress.setCountry(request.getParameter("country"));
 			adress.setRegion(request.getParameter("region"));
 			adress.setCity(request.getParameter("city"));

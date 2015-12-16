@@ -23,7 +23,7 @@ CREATE TABLE `usersdb`.`adress` (
 	`city` VARCHAR(30),
 	`street` VARCHAR(30),
 	`building` VARCHAR(30),
-	`app` INT,
+	`app` VARCHAR(5),
 	`id_user` INT NOT NULL,
 	PRIMARY KEY (`id`),
 	UNIQUE INDEX (`id_user`),
@@ -31,7 +31,12 @@ CREATE TABLE `usersdb`.`adress` (
 CREATE TABLE `usersdb`.`musicType` (
 	`id` INT AUTO_INCREMENT,
 	`typeName` VARCHAR(30) NOT NULL,
-	PRIMARY KEY (`id`));
+	PRIMARY KEY (`id`) );
+INSERT INTO `musicType` (`typeName`) value ('Rock');
+INSERT INTO `musicType` (`typeName`) value ('Pop');
+INSERT INTO `musicType` (`typeName`) value ('Jazz');
+INSERT INTO `musicType` (`typeName`) value ('Classic');
+INSERT INTO `musicType` (`typeName`) value ('Folk');
 CREATE TABLE `usersdb`.`userMusicType` (
 	`id` INT AUTO_INCREMENT,
 	`id_user` INT NOT NULL,
